@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.augusta" MadCap:comment="052511 lrw new;101111 lrw added related topics;061812 updated ;071812 lrw added 5 functions and removed ceil" MadCap:tocPath="Web Developer's Reference|Supported Functions" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>SData - Supported Functions</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor23"></a>Supported 
+ Functions for SData Queries</h1>
+        <p style="font-weight: normal;"><span class="PrimaryProductName">Saleslogix</span><span class="SLXBold" style="font-weight: normal;"> supports the following 
+ functions in the SData specification for use in SData queries. &#160;Refer 
+ to</span><a href="http://interop.sage.com/daisy/sdata/AnatomyOfAnSDataURL/QueryLanguage for more information" target="_blank">http://interop.sage.com/daisy/sdata/AnatomyOfAnSDataURL/QueryLanguage</a> 
+ for more information.<br />
+&#160;</p>
+        <table style="vertical-align: top;" cellspacing="0" width="68.922%">
+            <col style="width: 20.769%;" />
+            <col style="width: 79.231%;" />
+            <tr style="vertical-align: top;">
+                <td style="border: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">String Function</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">Example Query</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">concat</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=concat(Status,Type) 
+		 eq 'ActiveCustomer'</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">left</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=left(AccountName,2) 
+		 eq 'Co'</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">length</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=length(AccountName) 
+		 eq 11</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">lower</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=lower(Type) 
+		 eq 'customer'</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">right</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=right(AccountName,2) 
+		 eq 'es'</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">substring</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=substring(AccountName,3,2) 
+		 eq 'te '</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">upper</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=upper(Type) 
+		 eq 'CUSTOMER '</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">Numeric Function</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">Example Query</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">abs</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=abs(Revenue) 
+		 lt 1000</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">floor</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=floor(Revenue) 
+		 lt 1000</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">round</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=round(Revenue,-3) 
+		 lt 1000</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">sign</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=sign(Revenue) 
+		 eq -1</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">trim</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=trim(Type) 
+		 eq 'Customer'</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">Date Function</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">Example Query</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">currentTimestamp</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=currentTimestamp() 
+		 gt ModifyDate</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">dateAdd</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=dateAdd(ModifyDate, 
+		 2) gt CreateDate</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">dateSub</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=dateSub(ModifyDate, 
+		 2) lt CreateDate</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">day</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=day(ModifyDate) 
+		 eq 3</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">hour</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=hour(ModifyDate) 
+		 eq 21</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">minute</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Bullets">&#160;/sdata/slx/dynamic/-/accounts?where=minute(ModifyDate) 
+		 eq 9</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">month</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=month(ModifyDate) 
+		 eq 7</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">second</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=second(ModifyDate) 
+		 eq 15</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 20.769%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">year</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 79.231%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">/sdata/slx/dynamic/-/accounts?where=year(ModifyDate) 
+		 eq 2012</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p class="RelatedTopics">Related Topics</p>
+        <p class="Bullets"><a href="../Web_Services/SData.htm">SData</a>
+        </p>
+        <p class="Bullets"><a href="Comparing_Nulls_in_SData_Queries.htm">Comparing 
+ Nulls in SData Queries</a>
+        </p>
+        <p class="Bullets">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

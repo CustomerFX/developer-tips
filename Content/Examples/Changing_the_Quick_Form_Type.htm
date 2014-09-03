@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="092509 lrw new. 100909 lrw added ref to edit XML files.102209 lrw removed related topic and improved index entries." MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Changing the Quick Form Type</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor49"></a>Changing the Quick Form Type</h1>
+        <p class="Topic-Text-Numbered">You can change the type of a quick form by editing the XML file.</p>
+        <p class="Infinitive">To change</p>
+        <ol>
+            <li value="1">In Application Architect, verify that the quick form you want to edit is not open in the Quick Form Designer.
+<br />            
+        
+        The form must be closed to prevent overwriting your changes to the raw XML file with changes on the form.</li>
+            <li value="2">In the model, open the quick form XML file. If the project workspace is stored in the Virtual File System, use VFS Explorer. Otherwise, browse to it on the local disk under the project workspace folder.
+            
+        
+        <br />The form is located under: Model &gt; Entity Model &gt; package &gt; entity &gt; QuickForms.</li>
+            <li value="3">Find the &lt;Property name&gt; node near the top of the file.
+            </li>
+            <li value="4"> Change the view type to <span class="SLXBold">Sage.Platform.QuickForms.QuickFormSummaryViewDefinition</span> to make the quick form a summary view or to <span class="SLXBold">Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition</span> to make it a main detail view. For example:<br /> <span class="Code">&lt;Property name="DefinitionType" type="System.String"&gt; Sage.Platform.QuickForms.QuickFormSummaryViewDefinition, Sage.Platform.QuickForms&lt;/Property&gt;</span> sets the quick form to be a summary view.
+        </li>
+            <li value="5">Save the file.
+            </li>
+            <li value="6">In the Project Explorer, right-click the project name containing the quick form, and then click Reload Project.
+<br />This ensures that the form definition is updated in the project. </li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

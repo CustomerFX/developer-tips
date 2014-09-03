@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="new; 8/19 in work; 8/26 done;8/14/09 lrw added ref to pre-conditions." MadCap:fileTags="RoboHelpStatus.Ready for Review,RoboHelpCheckList.Added To TOC,RoboHelpCheckList.Index keywords,RoboHelpCheckList.Tested,RoboHelpCheckList.Finalized,RoboHelpCheckList.Reviewed" MadCap:tocPath="Web Developer's Reference|Process Orchestration Quick Start" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Understanding Process Orchestration</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor72"></a>Understanding 
+ Process Orchestration</h1>
+        <p>Process Orchestration functionality permits you to control the flow 
+ of work in <span class="PrimaryProductName">Saleslogix</span>. 
+ Process Orchestration workflows can be bound to any kind of <span class="PrimaryProductName">Saleslogix</span> entity.</p>
+        <p>Process Orchestration includes the following components:</p>
+        <ul>
+            <li value="1"><span class="PrimaryPortalProcessHost">Process Host portal</span>
+            </li>
+            <li value="2">Entity Eventing Service
+            </li>
+            <li value="3">Integration with Web Service
+            </li>
+        </ul>
+        <p class="subheading">sequential processes</p>
+        <p class="Bullets">The steps in a sequential process proceed in order from 
+ start to finish. An event, such as creation of an entity, will initiate 
+ one or more actions. For example, a sequential process could specify that 
+ on creation of a Lead entity, the "Lead Ownership" policy is 
+ executed. The policy details might be:</p>
+        <p class="code-snippet">IF Lead.State == "AZ"</p>
+        <p class="code-snippet">THEN Lead.Owner = "Bob"</p>
+        <p class="code-snippet">ELSE Lead.Owner = "Bill"</p>
+        <p>Sequential processes usually run from start to finish without interruption.</p>
+        <p class="subheading">Goal-driven processes</p>
+        <p class="Bullets">A goal-driven process contains multiple steps that the 
+ user can complete non-sequentially. Following are some characteristics 
+ of goal-driven workflows:</p>
+        <ul>
+            <li value="1">Steps are the smallest unit 
+	 of work.</li>
+            <li value="2">Steps can be grouped into 
+	 a stage. Completion of all required steps within a stage completes 
+	 the stage.
+            </li>
+            <li value="3">A workflow consists of a series 
+	 of stages.</li>
+            <li value="4">Steps 
+	 can be completed outside of the currently "active" stage.
+            </li>
+            <li value="5">Stages can be grouped into 
+	 scopes.
+            </li>
+            <li value="6">
+                All stages within a scope 
+	 must be finished before you can proceed to steps and stages in another 
+	 scope. For example, you might use one scope for all pre-sales activities.
+            </li>
+            <li value="7">Goal driven processes wait 
+	 for user input such as marking steps as complete or cancelled.
+            </li>
+        </ul>
+        <p class="subheading">Types of Activities (steps) supported</p>
+        <p>You can use any Microsoft or <span class="PrimaryProductName">Saleslogix</span> 
+ activities to build your workflows. <span class="PrimaryProductName">Saleslogix</span> 
+ pre-defined activities include:</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets">Schedule Activity: To Dos, 
+	 Phone Calls</p>
+            </li>
+            <li class="p-Bullets" value="2">
+                <p class="Bullets">Goal driven steps (GoalActivity), 
+	 stages (GoalDrivenActivity), and scopes (GoalDrivenScopeActivity)</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>Windows Policy Activities can be used to:</p>
+        <ul>
+            <li value="1">Assign Ownership (SecCodeID)
+                    </li>
+            <li value="2">Set User (UserID)
+                    </li>
+        </ul>
+        <p class="subheading">Entity Eventing Service</p>
+        <ul>
+            <li value="1">Managed code entity eventing 
+	 service integrates with data change events.
+            </li>
+            <li value="2">It can be configured to start 
+	 workflows based on data changes. Qualifying database events can be 
+	 pre-filtered with conditions.
+            </li>
+            <li value="3">New data change events are 
+	 intercepted at the OleDB provider level.
+            </li>
+            <li value="4">The service can be consumed 
+	 by other applications.
+            </li>
+        </ul>
+        <p class="Infinitive">Related Topics</p>
+        <p class="Bullets"><a href="Working_with_Process_Orchestration.htm">Implementing 
+ Process Orchestration</a>
+        </p>
+        <p class="Bullets"><a href="Process_Orchestration_FAQ.htm">Process Orchestration 
+ FAQ</a>
+        </p>
+        <p class="Bullets">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

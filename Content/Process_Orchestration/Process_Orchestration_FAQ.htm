@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="8/2 new;8/19 + Process Host Not Found message; 8/26 updated link to consolidate topic;102108 + note on Name=MessageURI;102208 + note on PROCESSINSTANCEESTATE.081409 lrw + url to start it.111409 removed exact match req.123009 + Troubleshooting to title." MadCap:fileTags="RoboHelpStatus.Ready for Review,RoboHelpCheckList.Added To TOC,RoboHelpCheckList.Index keywords,RoboHelpCheckList.Tested,RoboHelpCheckList.Finalized,RoboHelpCheckList.Reviewed" MadCap:tocPath="Web Developer's Reference|Process Orchestration Quick Start" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Process Orchestration FAQ</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">Process 
+ Orchestration FAQ and Troubleshooting</h1>
+        <p>Collected below are some frequently asked questions to consider when 
+ working with <span class="PrimaryProductName">Saleslogix</span><a name="kanchor79"></a> 
+ Process Orchestration:</p>
+        <p class="Infinitive"><span class="SLXBold">Q: 
+ How do I configure additional debug-logging for the Process Host?</span>
+        </p>
+        <p style="margin-left: 40px;">A: <span class="PrimaryProductName">Saleslogix</span> 
+ uses log4net by Apache: Exceptions, errors, and start up events are logged 
+ to the Application Event Log as <span class="PrimaryProductName">Saleslogix</span> 
+ Process Host. &#160;Make changes to logging by altering the log4net.config 
+ file in the root directory of the process host web site. &#160;A restart 
+ will be required. &#160;View documentation on additional debugging configuration 
+ specific to the process host in the log4net.config file deployed to the 
+ site.</p>
+        <p style="margin-left: 40px;">For additional information on log4net, see 
+ <a href="http://logging.apache.org/log4net/index.html" style="font-weight: normal;">http://logging.apache.org/log4net/</a></p>
+        <p class="Infinitive"><span class="SLXBold">Q: Can workflows have duplicate 
+ names if they reside in different workflow assembly libraries?</span>
+        </p>
+        <p style="margin-left: 40px;">A: Not at this time.</p>
+        <p class="Infinitive"><span class="SLXBold">Q: How do I make my workflow 
+ projects aware of model changes? What location should I use when I add 
+ a reference in my VS project to Sage.Entity.Interfaces.dll?</span>
+        </p>
+        <p style="margin-left: 40px;">A: The <a href="Installing_SalesLogix_VS_Workflow_Items.htm">Installing 
+ SalesLogix VS Workflow Items</a> Help topic instructs you to consolidate 
+ assemblies in a single folder.&#160;All workflow projects should use this 
+ new folder as the source of referenced assemblies.</p>
+        <p style="margin-left: 40px;">The Sage.Entity.Interfaces.dll should also 
+ be referenced from this folder, as it will automatically be updated whenever 
+ you build interfaces or build the web platform in Application Architect.</p>
+        <p class="Infinitive"><span class="SLXBold">Q: When should the MS workflow 
+ run time be started?</span>
+        </p>
+        <p style="margin-left: 40px;">A: Anytime you start your <span class="PrimaryPortalProcessHost">Process Host portal</span> (through 
+ IIS or web dev server for example), you must restart the MS workflow run 
+ time by browsing to http://servername:port/ProcessHost/Processmanager/crm/-/Processes.</p>
+        <p class="Infinitive"><span class="SLXBold">Q: When do changes made to 
+ the ProcessStart.xml file take effect?</span>
+        </p>
+        <p style="margin-left: 40px;">A: Changes to the ProcessStart.xml file take 
+ effect as soon as the file is saved in the portal. &#160;Saved changes 
+ are detected immediately by the MS workflow run time.</p>
+        <p class="Infinitive"><span class="SLXBold">Q: When do changes to the ProcessLib.xml 
+ file take effect?</span>
+        </p>
+        <p style="margin-left: 40px;">A: Changes to the processlib.xml take effect 
+ as soon as the &#160;file is saved. &#160;You can verify your changes 
+ are in effect by browsing to http://servername:port/ProcessHost/Processmanager/crm/-/Processes.</p>
+        <p class="Infinitive"><span class="SLXBold">Q: Can the MS workflow run 
+ time listen for nonspecific changes to an entity?</span>
+        </p>
+        <p style="margin-left: 40px;">A: No, it only listens for changes to properties 
+ you specify. So in the processstart.xml file, the memberfilter parameter 
+ on runprocess is required and must have at least one entity property for 
+ which changes are being watched.</p>
+        <p class="Infinitive"><span class="SLXBold">Q: If a process name listed 
+ in the processstart.xml cannot be found, what happens?</span>
+        </p>
+        <p style="margin-left: 40px;">A: When an action tries to start a process 
+ it cannot find, an exception is logged.</p>
+        <p class="Infinitive"><span class="SLXBold">Q: How should I change a workflow 
+ that is already deployed to production?</span>
+        </p>
+        <p style="margin-left: 40px;">A: As a best practice, for workflows that 
+ run to completion immediately, it is acceptable to make changes and redeploy 
+ the assembly. If the workflow runs for an indefinite period of time, and 
+ therefore could be persisted to secondary storage (i.e. the database for 
+ <span class="PrimaryProductName">Saleslogix</span>), you should 
+ never change the structure of the workflow and redeploy. &#160;If you 
+ are sure that change will not have an impact on the persisted state of 
+ a workflow, it may be acceptable to change; however, it is still considered 
+ a risk. &#160;A better approach would be to version your workflows, such 
+ as by naming convention.</p>
+        <p style="margin-left: 40px;">If necessary, you can remove workflows persisted 
+ to secondary storage by deleting the PROCESSINSTANCEESTATE records in 
+ the <span class="PrimaryProductName">Saleslogix</span> database 
+ for the associated workflow type.</p>
+        <p class="Infinitive">Q: The message "Process Host Not Found" 
+ appears in the Process Tasks pane in my Web Client. What could cause this 
+ error?</p>
+        <p style="margin-left: 40px;">A: The Process Tasks pane appears in the 
+ Web Client when you have enabled <span class="PrimaryProductName">Saleslogix</span> 
+ ProcessTasksTasklet for an entity Detail view. To enable the Web Client 
+ tasklet to consume the Process Host service, the service must be registered 
+ with the <span class="PrimaryPortalPrimary">Saleslogix (Web Client) portal</span> 
+ in its ServiceHost.xml file. &#160;Portal Deployment uses portal dependencies 
+ to write &lt;service&gt; entries to this file.</p>
+        <p style="margin-left: 40px;">If the message "Process Host Not Found" 
+ appears in your Process Tasks pane, then you may have deployed SlxClient 
+ in such a way that the ServiceHosts.xml file does not contain any entries, 
+ or the process host URL that is listed in ServiceHosts.xml is not a valid 
+ Process Host URL. The file ServiceHosts.xml file in the root of the <span class="PrimaryPortalPrimary">Saleslogix (Web Client) portal</span> 
+ (for example: C:\Inetpub\wwwroot\SlxClient\ServiceHosts.xml) should have 
+ a &lt;service&gt; entry similar to the following:</p>
+        <p class="code-snippet" style="margin-left: 64px;"><span class="code">&lt;service 
+ name="ProcessHost"&gt;http://servername:port/ProcessHost&lt;/service&gt;</span>
+        </p>
+        <p class="code-snippet" style="margin-left: 64px;">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

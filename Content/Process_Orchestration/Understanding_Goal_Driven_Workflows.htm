@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="new; 8/15/08 updated;10/2/08 rewritten" MadCap:fileTags="RoboHelpStatus.Ready for Review,RoboHelpCheckList.Added To TOC,RoboHelpCheckList.Index keywords,RoboHelpCheckList.Tested,RoboHelpCheckList.Finalized,RoboHelpCheckList.Reviewed" MadCap:tocPath="Web Developer's Reference|Process Orchestration Quick Start" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Understanding Goal Driven Workflows</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">Understanding 
+ Goal-Driven Workflows</h1>
+        <p class="Topic-Text-Numbered">A goal-driven workflow is similar to a traditional 
+ state machine workflow, except it is less restrictive in its approach 
+ to moving between states. &#160;This approach can be used to provide process 
+ guidance and report, without forcing users to complete a set of steps 
+ in a particular order.</p>
+        <p class="subheading">Goals</p>
+        <p class="Topic-Text-Numbered">A goal is the smallest unit of work in a 
+ goal-driven workflow. Goals are also referred to as steps, activities, 
+ or tasks. You can represent a goal in your workflow with a <span class="PrimaryProductName">Saleslogix</span> workflow entity, GoalActivity. 
+ Each GoalActivity has a status. To permit <span class="PrimaryProductName">Saleslogix</span> 
+ users to change the status of goals to completed or cancelled, you can 
+ add the <a href="Enabling_the_Process_Tasks_Tasklet.htm">Process Tasks 
+ pane</a><a name="kanchor75"></a> to entity Detail views. Alternatively, you can create your own 
+ interface using the Process Orchestration API.</p>
+        <p class="subheading">Stages</p>
+        <p class="Topic-Text-Numbered">You can group a set of goals into a stage 
+ by dropping them onto the stage in the Workflow Designer. A stage is considered 
+ completed only when all the goals inside of it are either completed or 
+ cancelled. Represent a stage with the <span class="PrimaryProductName">Saleslogix</span> 
+ workflow entity, GoalDrivenActivity.</p>
+        <p class="subheading">Scopes</p>
+        <p class="Topic-Text-Numbered">Scopes provide the ability to restrict what 
+ goals can be completed at any one time. &#160;Only goals and stages in 
+ the active scope can be processed, and only one scope can be active at 
+ a time. &#160;For example, you might create separate Sales and Fulfillment 
+ scopes. &#160;Represent a scope with the <span class="PrimaryProductName">Saleslogix</span> 
+ workflow entity, GoalDrivenScopeActivity. The goals and stages you drop 
+ into it can be completed in any order, but they must all be done before 
+ progressing to another scope.</p>
+        <p class="subheading">Lifetime of a Goal-Driven Workflow</p>
+        <p class="Topic-Text-Numbered">Once a goal-driven workflow is instantiated, 
+ it typically waits for messages at various steps. For example, a New Leads 
+ Checklist workflow might be instantiated when a new lead is created. The 
+ workflow waits for messages that the <span class="PrimaryProductName">Saleslogix</span> 
+ client sends when a user checks off various steps. Goal-driven workflow 
+ instances are deleted once all their stages are completed. Because goal-driven 
+ workflows often wait for some communication, they exist over some meaningful 
+ duration. Thus they are likely to be persisted to the database and can 
+ be restarted if ProcessHost must be restarted.</p>
+        <p class="Topic-Text-Numbered">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

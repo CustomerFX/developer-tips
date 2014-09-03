@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="12/09/08 new 1-66187, revised 010909. 123009 added upload of image." MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Changing Logo in &lt;PortalPrimary&gt;</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor48"></a>Changing 
+ the Logo in the <span class="PrimaryPortalPrimary">Saleslogix (Web Client) portal</span></h1>
+        <p>You can replace the <span class="PrimaryProductName">Saleslogix</span> 
+ logo image used in the Web Client or point it to a different image. The 
+ default logo is 134 x 23 pixels. If you are using a different image size, 
+ review the client screens for any impact to their layouts.</p>
+        <p class="Infinitive">To replace</p>
+        <ol>
+            <li value="1">Name 
+	 your .gif file <span class="SLXBold">saleslogix.gif</span>.
+            </li>
+            <li value="2">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Open 
+	 the SLXClient portal for editing. See "Editing a Portal" </MadCap:conditionalText>in the Application Architect online Help.
+            </li>
+            <li value="3">Replace 
+	 the saleslogix.gif file under <span class="SLXBold">SupportFiles\images</span> 
+	 with the new one.
+            </li>
+            <li value="4"><a href="portalexplorer.chm::/Configuring_and_Deploying_Portals/Deployment/Portals/Deploying_Sage_SalesLogix_Web_Client_Portal.htm">Redeploy 
+	 the portal</a>.
+            </li>
+        </ol>
+        <p class="Infinitive">To point to another image</p>
+        <ol>
+            <li value="1">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Open 
+	 the SLXClient portal for editing. See "Editing a Portal" </MadCap:conditionalText>in the Application Architect online Help.
+            </li>
+            <li value="2">Expand 
+	 <span class="SLXBold">SupportFiles &gt; Images</span>, and then  <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">add 
+	 the new image. See "Adding Existing Files" </MadCap:conditionalText>in the Application Architect online Help.
+            </li>
+            <li value="3">Expand 
+	 <span class="SLXBold">SupportFiles &gt; Masters</span>, and then do 
+	 the following steps for the <span class="SLXBold">Base.Master</span> 
+	 and <span class="SLXBold">dashboard.master</span> files:
+            
+       
+        <ol><li value="1">Right-click 
+	 the file, and then click <span class="SLXBold">Open</span>.</li><li value="2">Find 
+	 the following line and change the relative url to point to another 
+	 image of type .gif, .jpg, or .png:<br /><span class="CODE">&lt;asp:Image runat=”server” 
+ ID=”imgLogo” style=”float:left” ImageALign=”Middle” ImageUrl=”~/images/saleslogix.gif” 
+ AlternateText=””/&gt;</span></li><li value="3">Click 
+	 <span class="SLXBold">Save</span> and close the file.
+            </li></ol></li>
+            <li value="4"><a href="PortalExplorer.chm::/Configuring_and_Deploying_Portals/Deployment/Portals/Deploying_Sage_SalesLogix_Web_Client_Portal.htm">Redeploy 
+	 the portal</a>.
+            </li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

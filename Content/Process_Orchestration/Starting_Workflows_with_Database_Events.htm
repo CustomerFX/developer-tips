@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="8/26/2008 done. 081409 lrw added link to pre-conditions topic." MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|Process Orchestration Quick Start" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Starting Workflows with Database Events</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">Starting 
+ Workflows Through Database Eventing</h1>
+        <p><a name="kanchor77"></a>Starting a workflow is equivalent to instantiating a workflow for a 
+ particular entity instance. You can configure a workflow to start in response 
+ to a database event such as the addition, change, or deletion of an entity. 
+ You can also set pre-conditions for the Process Orchestration run time 
+ to verify before running a process.</p>
+        <p class="Infinitive">To set up</p>
+        <ol>
+            <li class="p-Topic-Text-Numbered" value="1">
+                <p class="Topic-Text-Numbered">
+                    <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Open 
+	 the <span class="PrimaryPortalProcessHost">Process Host portal</span> 
+	 in Application Architect.  See "Editing a Portal" in the Application Architect online Help.</MadCap:conditionalText>
+                </p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="2">
+                <p class="Topic-Text-Numbered">Double-click 
+	 on <span class="SLXBold">ProcessStart.xml</span> under <span class="SLXBold">SupportFiles</span>.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="3">
+                <p class="Topic-Text-Numbered">Create 
+	 an &lt;event&gt; entry according to the examples documented in the 
+	 file. Use the names of the workflow and the entity property (or properties) 
+	 for which a change should start the workflow.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="4">
+                <p class="Topic-Text-Numbered">Optionally 
+	 include <a href="Pre-Conditions_in_Process_Orchestration.htm">pre-conditions</a> 
+	 in the file.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="5">
+                <p class="Topic-Text-Numbered">Save 
+	 your changes and  
+	 <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">deploy</MadCap:conditionalText> them.</p>
+            </li>
+        </ol>
+        <p class="Infinitive">Related Topics</p>
+        <p class="Bullets"><a href="Working_with_Process_Orchestration.htm">Implementing 
+ Process Orchestration</a>
+        </p>
+        <p class="Bullets"><a href="Pre-Conditions_in_Process_Orchestration.htm">Pre-Conditions 
+ in Process Orchestration</a>
+        </p>
+        <p class="Bullets">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

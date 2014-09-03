@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="6/6/12 lrw new topic" MadCap:fileTags="RoboHelpStatus.In Progress" MadCap:tocPath="Web Developer's Reference" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>About Client-Side Validation</title>
+        <link href="Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor4"></a>About Client-Side Form Validation</h1>
+        <p>The Web Client runs form validation at the Save onClick event. &#160;Working in conjunction with the ClientBindingManagerService, the onClick event of each registered Save button uses Sage.Utility.Validate to cause the dijit-based controls in the containing workspace to run their validation. Normal entity navigation or any other asynchronous postbacks are not affected; validation is not run at this time. &#160;Also, individual controls continue to run their validation at the onBlur event.</p>
+        <p>The control property, Required, is connected to the client validation system. Validation is not limited to the Required property, but Required is the only validation that is configurable at Quick Form design time. &#160;Controls such as URL and Email have their own validation rules regarding data format. &#160;These validations are also run at this time.</p>
+        <p class="subheading">How does it work for Users</p>
+        <ol style="list-style: decimal;">
+            <li class="p" value="1">
+                <p>When the Save button is clicked on a detail or insert view (QuickForm), validation is performed on each control inside the corresponding workspace.</p>
+            </li>
+            <li class="p" value="2">
+                <p>If any control fails validation:</p>
+            </li>
+        </ol>
+        <ol start="1" style="list-style: decimal;">
+            <li class="p-Topic-Text-Lettered" value="1">
+                <p class="Topic-Text-Lettered">The control reverts to its error state. For example:</p>
+                <ol style="list-style: decimal;">
+                    <li class="p-Bullets" value="1">
+                        <p class="Bullets">TextBox error state <img src="Graphics/textbox_error-state.bmp" style="border: none;" alt="" width="149" height="26" border="0" /></p>
+                    </li>
+                </ol>
+                <ol style="list-style: decimal;">
+                    <li class="p-Bullets" value="1">
+                        <p class="Bullets">PickList error state &#160;&#160;<img src="Graphics/picklist_error-state.bmp" style="border: none;" alt="" width="145" height="31" border="0" /></p>
+                    </li>
+                </ol>
+            </li>
+            <li class="p-Topic-Text-Lettered" value="2">
+                <p class="Topic-Text-Lettered">The first failing control gains cursor focus, and the corresponding error message is displayed.</p>
+            </li>
+            <li class="p-Topic-Text-Lettered" value="3">
+                <p class="Topic-Text-Lettered">The first failing control scrolls into view if not already in view.</p>
+            </li>
+            <li class="p-Topic-Text-Lettered" value="4">
+                <p class="Topic-Text-Lettered">The form submit action is halted.</p>
+            </li>
+        </ol>
+        <ol start="3" style="list-style: decimal;">
+            <li class="p-Topic-Text-Numbered" value="3">
+                <p class="Topic-Text-Numbered">The user has the option to fix the failed validations and re-save the form or navigate away from the current entity. &#160;</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="4">
+                <p class="Topic-Text-Numbered">By design, entity navigation is not halted due to validation failure.</p>
+            </li>
+        </ol>
+        <p class="subheading">How does it work for Developers</p>
+        <ol>
+            <li class="p-Topic-Text-Numbered" value="1">
+                <p class="Topic-Text-Numbered">As each button is registered as a Save button with the ClientBindingManagerService, its onClick event is connected to the Sage.Utility.Validate.onWorkSpaceSave function which receives the workspace that the button is in.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="2">
+                <p class="Topic-Text-Numbered">When called, onWorkSpaceSave finds all dijit based controls that live within the containing DOM node. &#160;The id of the containing DOM node is assumed based on foreknowledge of the workspaces.</p>
+            </li>
+        </ol>
+        <ul>
+            <li class="p-Topic-Text-Bulleted-2" value="1">
+                <p class="Topic-Text-Bulleted-2">MainContentWorkspace and TabWorkspace validate ‘mainform’.</p>
+            </li>
+            <li class="p-Topic-Text-Bulleted-2" value="2">
+                <p class="Topic-Text-Bulleted-2">DialogWorkspace validates ‘DialogWorkspace_window’.</p>
+            </li>
+        </ul>
+        <ol start="3">
+            <li class="p-Topic-Text-Numbered" value="3">
+                <p class="Topic-Text-Numbered">If any control fails validation, an isValid flag is set to false, and the control is thrown into its error state.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="4">
+                <p class="Topic-Text-Numbered">In the onSubmit of the 'mainform', a check on isValid is performed to determine if the form should submit.</p>
+            </li>
+        </ol>
+        <p class="subheading">How does it work for Customizations (outside QuickForms)</p>
+        <ol>
+            <li class="p-Topic-Text-Numbered" value="1">
+                <p class="Topic-Text-Numbered">Sage.Utility.Validate.runValidation is available for use on any DOM node. &#160;</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="2">
+                <p class="Topic-Text-Numbered">Any node provided to runValidation is scanned for dijit based controls.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="3">
+                <p class="Topic-Text-Numbered">Each control runs its validation function.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="4">
+                <p class="Topic-Text-Numbered">runValidation then returns a Boolean result indicating the outcome of the validation and can be handled accordingly by the consumer. <span style="font-size: 6pt;color: #c0c0c0;">1</span></p>
+            </li>
+        </ol>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

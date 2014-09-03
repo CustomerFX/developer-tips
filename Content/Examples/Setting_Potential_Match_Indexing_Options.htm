@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" xmlns="" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <meta name="template" content="SalesLogixFooterHelpLink.htt" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" />
+        <meta name="topic-comment" content="101809 lrw new." />
+        <meta name="generator" content="Adobe RoboHelp 10" /><title>Setting Potential Match Indexing Options</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Setting Potential Match Indexing Options</h1>
+        <p>The Potential Match Service is used during lead import to find potential 
+ matches for the lead being imported and to prevent duplicates in the system. 
+ You can set options that specify what situations require a Potential Match 
+ Index update.</p>
+        <p class="Infinitive">Search for Potential Matches</p>
+        <p class="Topic-Text-Numbered">When you search for duplicates while adding 
+ a new contact, account, or lead or converting a lead, incremental indexing 
+ is not performed before the search unless you enable the TurnOnIndexing 
+ option in the PotentialMatchConfigurations.xml file. <a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="1ol;1note">Tell me more...<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a></p>
+        <p class="Infinitive">To enable</p>
+        <ol MadCap:targetName="1ol" style="display: none;">
+            <li value="1"><a href="ApplicationArchitect.chm::/Popups/Opening_the_VFS_Explorer.htm" style="text-decoration: underline; ">Open the <span class="SLXBold" style="text-decoration: underline; ">VFS 
+		 Explorer</span></a>.
+            </li>
+            <li value="2">Expand 
+		 <span class="SLXBold">Configuration</span> &gt; <span class="SLXBold">Global</span>.
+            </li>
+            <li value="3">Double-click 
+		 on <span class="SLXBold" xmlns="http://www.w3.org/1999/xhtml">PotentialMatchConfigurations.xml</span>.
+<br xmlns="http://www.w3.org/1999/xhtml" />The xml file is opened for edit. </li>
+            <li value="4">Find 
+		 the <span class="SLXBold">&lt;AdvancedOptions&gt;</span> section.
+            </li>
+            <li value="5">Find 
+		 or add the <span class="SLXBold">&lt;TurnOnIndexing&gt;</span> 
+		 entry.
+            </li>
+            <li value="6">Set 
+		 the value to <span class="SLXBold" xmlns="http://www.w3.org/1999/xhtml">true</span>. For example:
+            
+        
+        <br xmlns="http://www.w3.org/1999/xhtml" />&lt;TurnOnIndexing&gt;true&lt;/TurnOnIndexing&gt;</li>
+            <li value="7">Save 
+		 the file.
+            </li>
+        </ol>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt; display: none;" cellspacing="0" width="98%" MadCap:targetName="1note">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%; vertical-align: TOP; padding-left: 6px;       padding-top: 6px; padding-right: 6px; padding-bottom: 6px;">
+                    <p style="text-align: center; margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%; vertical-align: TOP; padding-left: 6px;       padding-top: 6px; padding-right: 6px; padding-bottom: 6px;">
+                    <p>This 
+			 configuration is cached. You must restart the web site before 
+			 the change takes effect.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Infinitive">Import Configurations</p>
+        <p>By default, when you run a lead import and search for duplicates, incremental 
+ indexing before the import is enabled and updating the index during the 
+ import is disabled. Indexing will be performed during the import if the 
+ user selects the "Check for duplicates contained within the import 
+ source file" option in the Lead Import dialog box or you enable the 
+ IndexAfterInsert option in the ImportConfigurations.xml file. <a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="2ol;2note">Tell me more...<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a></p>
+        <p class="Infinitive">To enable</p>
+        <ol MadCap:targetName="2ol" style="display: none;">
+            <li value="1">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Open the <span class="SLXBold" style="text-decoration: underline; ">VFS 
+		 Explorer</span>. See "Opening the VFS&#160;Explorer" in the Application Architect online Help</MadCap:conditionalText>.
+            </li>
+            <li value="2">Expand 
+		 <span class="SLXBold">Configuration</span> &gt; <span class="SLXBold">Global</span>.
+            </li>
+            <li value="3">Double-click 
+		 on <span class="SLXBold" xmlns="http://www.w3.org/1999/xhtml">ImportConfigurations.xml</span>.
+          
+       
+        <br xmlns="http://www.w3.org/1999/xhtml" />The xml file is opened for edit.</li>
+            <li value="4">Find 
+		 the <span class="SLXBold">&lt;ImportAdvancedOptions&gt;</span> 
+		 section.
+            </li>
+            <li value="5">Find 
+		 or add the <span class="SLXBold">&lt;IndexAfterInsert&gt;</span> 
+		 entry.
+            </li>
+            <li value="6">Set 
+		 the value to <span class="SLXBold" xmlns="http://www.w3.org/1999/xhtml">true</span>. For example:
+           
+        
+        <br xmlns="http://www.w3.org/1999/xhtml" />&lt;IndexAfterInsert&gt;true&lt;/IndexAfterInsert&gt;</li>
+            <li value="7">Save 
+		 the file.
+            </li>
+        </ol>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt; display: none;" cellspacing="0" width="98%" xmlns="http://www.w3.org/1999/xhtml" MadCap:targetName="2note">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%; vertical-align: TOP; padding-left: 6px;       padding-top: 6px; padding-right: 6px; padding-bottom: 6px;">
+                    <p style="text-align: center; margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%; vertical-align: TOP; padding-left: 6px;       padding-top: 6px; padding-right: 6px; padding-bottom: 6px;">
+                    <p>This 
+			 configuration is cached. You must restart the web site before 
+			 the change takes effect.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="RelatedTopics">Related Topics</p>
+        <p>"Standard Speedsearch Indexes" in the Administrator help</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

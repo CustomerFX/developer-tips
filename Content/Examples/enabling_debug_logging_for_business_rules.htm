@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="040709 new; 062709 lrw ported back from Tanami.123109 paths." MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Enabling Debug Logging for Business Rules</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor57"></a>Enabling 
+ Debug Logging for Business Rules</h1>
+        <p>To debug business rules in Visual Studio, you can enable logging in 
+ the log4net.config file.</p>
+        <p class="Infinitive">To enable</p>
+        <ol>
+            <li value="1">In 
+	 a text editor, open the log4net.config file of the portal. (For example, 
+	 C:\Inetpub\wwwroot\SlxClient\log4net.config)
+            </li>
+            <li value="2">Remove 
+	 commenting from the &lt;appender&gt;, &lt;root&gt;, and &lt;logger&gt; 
+	 sections.
+            </li>
+            <li value="3">Add 
+	 the following &lt;logger&gt; section and save your changes:
+            </li>
+        </ol>
+        <p class="code-snippet" style="margin-left: 64px;">&lt;logger name="BusinessRules"&gt;</p>
+        <p class="code-snippet" style="margin-left: 64px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;level 
+ value="DEBUG" /&gt;</p>
+        <p class="code-snippet" style="margin-left: 64px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;appender-ref 
+ ref="LOG" /&gt;</p>
+        <p class="code-snippet" style="margin-left: 64px;">&lt;/logger&gt;</p>
+        <p class="code-snippet" style="margin-left: 64px;">&#160;</p>
+        <p class="Topic-Text-Indent">Logging statements will be written to debug.log 
+ under the "log" folder of the website. (For example, C:\Inetpub\wwwroot\SLXClient\log\debug.log)</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

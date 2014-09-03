@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="120710 lrw new." MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Resources/TableStyles/Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="copyright" content="" /><title>Formatting SData Property Values</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor59"></a>Formatting SData Payload Property Values Based on Current Culture</h1>
+        <p>When formatting the SData property values for display to the user, it 
+ is desirable to format them in a culturally sensitive way. The following 
+ example shows how to use the schema to detect the property type and format 
+ the property value based on the current culture. The sample code uses 
+ the <span class="SpellE">SData</span> Core Client Libraries which are 
+ available with documentation and examples at https://github.com/Saleslogix/SDataCSharpClientLib.</p>
+        <ol>
+            <li value="1">Get 
+	 the schema and load it into a dictionary of property name - property 
+	 object pairs. Use one of the following methods:
+           
+       
+        <ol><li value="1">Get 
+	 the schema with SDataResourceSchemaRequest&#160;
+           
+       
+        <table style="vertical-align: top;margin-left: 40px;mc-table-style: url('../Resources/TableStyles/Code.css');" cellspacing="0" width="61.43%" bgcolor="#EEEEEE" class="TableStyle-Code"><col style="width: 100%;" class="TableStyle-Code-Column-Column1" /><tr style="vertical-align: top;" class="TableStyle-Code-Body-Body1"><td style="border: Solid 1px #000000;width: 100%;padding-right: 10px;padding-left: 10px;" class="TableStyle-Code-BodyD-Column1-Body1"><p>// initialize the endpoint service, 
+		 create and execute request</p><p>&#160;&#160;&#160;&#160;var service = new SDataService("https://&lt;yourserver&gt;/SData/slx/dynamic/-/", 
+		 "tfssync", "SLXMaster");</p><p>&#160;&#160;&#160;&#160;var request = new SDataResourceSchemaRequest(service) 
+		 {ResourceKind = "defects"};</p><p>&#160;&#160;&#160;&#160;var schema = request.Read();</p><p>// get the schema for the target resource</p><p>&#160;&#160;&#160;&#160;var resource = schema.Resources[schema.TargetElementName];</p><p>// make dictionary of property objects indexed by name</p><p>&#160;&#160;&#160;&#160;var properties = resource.Properties.ToDictionary(prop 
+		 =&gt; prop.Name);</p></td></tr></table> <![CDATA[ ]]></li><p class="Topic-Text-Indent">&#160;</p><li value="2">Get 
+	 inline schema as part of a regular feed or entry request
+          
+    
+        <table style="vertical-align: top;margin-left: 40px;mc-table-style: url('../Resources/TableStyles/Code.css');" cellspacing="0" width="61.43%" bgcolor="#EEEEEE" class="TableStyle-Code"><col style="width: 100%;" class="TableStyle-Code-Column-Column1" /><tr style="vertical-align: top;" class="TableStyle-Code-Body-Body1"><td style="border: Solid 1px #000000;width: 100%;padding-right: 10px;padding-left: 10px;" class="TableStyle-Code-BodyD-Column1-Body1"><p>// initialize the endpoint service, 
+		 create and execute request</p><p>&#160;&#160;&#160;&#160;var service = new SDataService("https://&lt;yourserver&gt;/sdata/slx/dynamic/-/", 
+		 "tfssync", "SLXMaster");</p><p>&#160;&#160;&#160;&#160;var request = new SDataSingleResourceRequest(service)</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ResourceKind 
+		 = "defects",</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ResourceSelector 
+		 = "'fDEMOA000005'",</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;QueryValues 
+		 = {{"includeSchema", "true"}}</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;};</p><p>&#160;&#160;&#160;&#160;var entry = request.Read();</p><p>// get schema for defect resource from request results (includes 
+		 all related resource schemas)</p><p>&#160;&#160;&#160;&#160;var schema = SDataSchema.Read(new StringReader(entry.GetSDataSchema()));</p><p>// get schema for specific resource</p><p>&#160;&#160;&#160;&#160;var resource = schema.Resources["Defect"];</p><p>// make dictionary of property objects indexed by name</p><p>&#160;&#160;&#160;&#160;var properties = resource.Properties.ToDictionary(prop 
+		 =&gt; prop.Name);</p></td></tr></table></li></ol><li value="2">Loop through the payload properties, looking up the 
+	 data type of each property and using that to properly format the value 
+	 of the property.
+           
+      
+        <table style="vertical-align: top;margin-left: 40px;mc-table-style: url('../Resources/TableStyles/Code.css');" cellspacing="0" width="61.43%" bgcolor="#EEEEEE" class="TableStyle-Code"><col style="width: 100%;" class="TableStyle-Code-Column-Column1" /><tr style="vertical-align: top;" class="TableStyle-Code-Body-Body1"><td style="border: Solid 1px #000000;width: 100%;padding-right: 10px;padding-left: 10px;" class="TableStyle-Code-BodyD-Column1-Body1"><p>// get the payload</p><p>&#160;SDataPayload payload = entry.GetSDataPayload();</p><p>&#160;</p><p>// loop thru payload items</p><p>foreach (var pair in payload.Values)</p><p>&#160;&#160;&#160;&#160;{</p><p>//get payload property name and value</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;var name = pair.Key;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;var value = 
+		 pair.Value;</p><p>&#160;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SMEProperty 
+		 prop; // SMEProperties contain metadata about SData resource properties</p><p>&#160;</p><p>// get property object from dictionary</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;properties.TryGetValue(name, 
+		 out prop);</p><p>// get the data type of the property from the property object</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;var type = prop 
+		 != null ? prop.DataType : null;</p><p>// cast payload value to string &#160;(for example "Abbott 
+		 Ltd")</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;var strValue 
+		 = value as string; &#160;</p><p>&#160;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if (strValue 
+		 != null) &#160;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p><p>// convert string to value of appropriate data type</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;switch 
+		 (type)</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;case 
+		 "dateTime":</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;value 
+		 = W3CDateTime.Parse(strValue).DateTime;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;break;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;case 
+		 "boolean":</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;value 
+		 = XmlConvert.ToBoolean(strValue);</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;break;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;case 
+		 "int":</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;value 
+		 = XmlConvert.ToInt32(strValue);</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;break;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;case 
+		 "double":</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;value 
+		 = XmlConvert.ToDouble(strValue);</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;break;</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p><p>&#160;// format value according to current culture</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;value 
+		 = Convert.ToString(value, CultureInfo.CurrentCulture);</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p><p>&#160;// write out to console the type of the property, the 
+		 property name, and the formatted value</p><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Console.WriteLine("({0}) 
+		 {1}: {2}", type ?? "?", name, value);</p><p>&#160;&#160;&#160;&#160;}</p></td></tr></table> <![CDATA[ ]]></li></li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

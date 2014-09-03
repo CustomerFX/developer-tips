@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="moved utilities up one level out of the Architect folder; 123009 lrw path." MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|Utilities" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="copyright" content="" /><title>fscopy.exe</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor14"></a>FSCopy.exe</h1>
+        <p>FSCopy.exe is a command-line utility that allows you to import or export 
+ between <span class="PrimaryProductName">Saleslogix</span> 
+ supported file system types (VFS, ZIP, disk). For information on the arguments 
+ of this utility, type the utility name at a command line prompt in the 
+ <span class="PrimaryProductName">Saleslogix</span> install 
+ directory on the Administrative Workstation.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p class="Bullets">Before running FSCopy.exe to copy translated 
+		 resources into the database, ensure that Application Architect 
+		 is closed; otherwise, the build Web platform process does not 
+		 recognize the changes or add them to the Web site. After the FSCopy.exe 
+		 utility runs, open Application Architect. <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Build and deploy. See the Application Architect online help topics "Building the Web Platform" and "Deploying the Saleslogix Web Client Portal"</MadCap:conditionalText>.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>The following table describes the most common usage scenarios. </p>
+        <p>&#160;</p>
+        <table style="left: 0px;top: 84px;height: 228px;vertical-align: center;margin-left: auto;margin-right: auto;width: 95%;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" cellspacing="0" class="TableStyle-TableStyle">
+            <col style="width: 30%;" class="Column-Column1" />
+            <col style="width: 70%;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p class="Tabletop">Usage Scenario</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">Command-line Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">Get help</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">fscopy/?</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">Export entire VFS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">fscopy/source:VFS:\\ 
+		 /target:c:\</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">Export a directory from 
+		 VFS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">fscopy/source:VFS:\Model 
+		 /target:c:\</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">Zip the VFS directory</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">fscopy/source:VFS:\Model 
+		 /target:C:\</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">Export .resx files from 
+		 the VFS model for localization</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table"><span class="code">fscopy /source:"VFS:\Model" /target:"C:\ModelLocalization /recursive:true 
+		 /filter:*.resx /connection:MyConnectionString</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">Import .resx files into 
+		 the VFS model</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table"><span class="code">fscopy /source:"C:\ModelLocalization" /target:"VFS:\Model" 
+		 /recursive:true /filter:"*.resx" /connection:"MyConnectionString"</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">Get help on a custom 
+		 FSCopy definition file (xml file that defines a set of copy operations)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table"><span class="code">fscopy "MyCustomExport.xml" /?</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 30%;padding-right: 10px;padding-left: 10px;" class="BodyB-Column1-Body1">
+                        <p class="Table">Rebuild VFS locally 
+		 (simulating VFS build process)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 70%;padding-right: 10px;padding-left: 10px;" class="BodyA-Column1-Body1">
+                        <p class="Table"><span class="code">fscopy "..\ci\FSCOPY_Build.xml 
+		 /target:VFS: /root:.. /bins:..\debug 
+		 /batch:false /truncate:true /connection:MyConnectionString</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="RelatedTopics">Related Topics</p>
+        <p><a href="using_build_and_deploy_automation_tools.htm">Using Automation 
+ Tools</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

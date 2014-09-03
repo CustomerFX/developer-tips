@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1" DescendantCount="90">
+    <TocEntry Title="Web Developer's Reference" ComputedFirstTopic="false" DescendantCount="90">
+        <TocEntry Title="Saleslogix Web Application Developer Experience" Link="/Content/Topics/web_application_developer_experience.htm" ComputedResetPageLayout="true" ComputedFirstTopic="true" DescendantCount="0" />
+        <TocEntry Title="About JavaScript and VBScript" Link="/Content/Topics/javascript_and_vbscript.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="MySLX API" Link="/Content/MySLX_API.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="Saleslogix Event Handling in the Page Life Cycle" Link="/Content/Saleslogix_Event_Handling_in_the_Page_Life_Cycle.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="About Client-Side Form Validation" Link="/Content/About_Client-Side_Form_Validation.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        <TocEntry Title="CAB Objects" ComputedFirstTopic="false" DescendantCount="5">
+            <TocEntry Title="Key CAB Concepts" Link="/Content/CAB_Concepts/Key_CAB_Concepts.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="ObjectBuilder" Link="/Content/CAB_Concepts/ObjectBuilder.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="WorkItems" Link="/Content/CAB_Concepts/WorkItems.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Workspaces" Link="/Content/CAB_Concepts/Workspaces.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Accessing a Page WorkItem from a Smart Part" Link="/Content/CAB_Concepts/accessing_a_page_workitem_from_a_smart_part.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Utilities" ComputedFirstTopic="false" DescendantCount="6">
+            <TocEntry Title="Using Automation Tools" Link="/Content/Utilities/using_build_and_deploy_automation_tools.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="BundleDiff.exe" Link="/Content/Utilities/BundleDiff.exe.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Bundler.exe" Link="/Content/Utilities/bundler.exe.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="FindOrphans.exe" Link="/Content/Utilities/FindOrphans.exe.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="FSCopy.exe" Link="/Content/Utilities/fscopy.exe.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="ModelUtility.exe" Link="/Content/Utilities/modelutility.exe.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Web Services" ComputedFirstTopic="false" DescendantCount="3">
+            <TocEntry Title="SData" Link="/Content/Web_Services/SData.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Job Server" Link="/Content/Web_Services/About_Job_Server.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Sparklines" Link="/Content/Web_Services/sparklines.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Supported Functions" ComputedFirstTopic="false" DescendantCount="2">
+            <TocEntry Title="HQL Queries - Supported Functions" Link="/Content/Supported_Functions/hql_queries_-_supported_functions.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="SData - Supported Functions" Link="/Content/Supported_Functions/SData_-_Supported_Functions.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Web Help" Link="/Content/CustomWebHelp/Overview.htm" ComputedFirstTopic="false" DescendantCount="18">
+            <TocEntry Title="Web Help Overview" Link="/Content/CustomWebHelp/Overview.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Customizing Saleslogix Web Help" ComputedFirstTopic="false" DescendantCount="5">
+                <TocEntry Title="Customizing a Saleslogix Web Help Topic" Link="/Content/CustomWebHelp/Customizing_a_Saleslogix_Web_Help_Topic.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Linking to Another Help Topic" Link="/Content/CustomWebHelp/Linking_to_Another_Help_Topic.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Adding an Image to a Help Topic" Link="/Content/CustomWebHelp/adding_an_image_to_a_help_topic.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Formatting Customized Web Help with .css" Link="/Content/CustomWebHelp/Formatting_Custom_Web_Help_with_help.css.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Deleting Topics from a Project" Link="/Content/CustomWebHelp/Removing_Topics_from_a_Project.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="Creating Custom Web Help" ComputedFirstTopic="false" DescendantCount="6">
+                <TocEntry Title="Creating a Custom Help Topic" Link="/Content/CustomWebHelp/Creating_a_Custom_Help_Topic.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Linking to Another Help Topic" Link="/Content/CustomWebHelp/Linking_to_Another_Help_Topic.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Adding an Image to a Help Topic" Link="/Content/CustomWebHelp/adding_an_image_to_a_help_topic.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Formatting Customized Web Help with .css" Link="/Content/CustomWebHelp/Formatting_Custom_Web_Help_with_help.css.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Adding Custom Help Topics to a Project" Link="/Content/CustomWebHelp/Adding_Custom_Help_Topics.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Adding a Help Topic Alias" Link="/Content/CustomWebHelp/adding_an_help_topic_alias.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="Making Your Web Help Accessible" ComputedFirstTopic="false" DescendantCount="5">
+                <TocEntry Title="Include a Topic in the Index" Link="/Content/CustomWebHelp/Include_a_Topic_in_the_Index.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Include a Topic in the TOC" Link="/Content/CustomWebHelp/Include_a_Custom_Topic_in_the_TOC.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Linking to Another Help Topic" Link="/Content/CustomWebHelp/Linking_to_Another_Help_Topic.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Adding a Help Topic Alias" Link="/Content/CustomWebHelp/adding_an_help_topic_alias.htm" ComputedFirstTopic="false" DescendantCount="0" />
+                <TocEntry Title="Linking a Help Topic to a Help Button" Link="/Content/CustomWebHelp/Linking_a_Help_Topic_to_a_Help_button.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+            <TocEntry Title="Upgrading Customized Web Help" ComputedFirstTopic="false" DescendantCount="1">
+                <TocEntry Title="Upgrading Customized Help" Link="/Content/CustomWebHelp/Upgrading_Customized_Help.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="How to..." ComputedFirstTopic="false" DescendantCount="37">
+            <TocEntry Title="Add Conditions to Lookups in Customer Portal" Link="/Content/Examples/Adding_Conditions_to_Lookups_in_Customer_Portal.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Add Contextual Awareness for Custom Entity Main Views" Link="/Content/Examples/Adding_Contextual_Awareness_for_Custom_Entity_Main_Views.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Add Culture to List in Web Form Designer" Link="/Content/Examples/Adding_Culture_to_List_in_Form_Designer.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Add Custom Entity to a Merge Business Rule" Link="/Content/Examples/Adding_a_Custom_Entity_to_a_Merge_Business_Rule.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Add File Types for Attachments" Link="/Content/Examples/Adding_FIle_Types_for_Attachments.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Apply Action Security to Custom Forms" Link="/Content/Examples/Applying_Action_Security_to_Custom_Forms.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Apply Field Level Security to Entity Insertion" Link="/Content/Examples/Applying_Field_Level_Security_to_Entity_Insertion.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Change the Active Tab and Captions on a MultiTab Control" Link="/Content/Examples/Changing_the_Active_Tab_and_Captions_on_a_MultiTab_Control.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Change the Logo in the Web Client" Link="/Content/Examples/Changing_logo_in_SalesLogix_Web_client.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Change the Quick Form Type" Link="/Content/Examples/Changing_the_Quick_Form_Type.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Compare Nulls in SData Queries" Link="/Content/Supported_Functions/Comparing_Nulls_in_SData_Queries.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Configure the Saleslogix Cache Server" Link="/Content/Examples/Configuring_the_SalesLogix_Cache_Server.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Consume SData through the Web Client" Link="/Content/Examples/Consuming_SData_through_the_Web_Client.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Create Custom Controls for Quick Forms" Link="/Content/CustomQuickFormControls/Creating_Custom_Controls_for_Quick_Forms.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Create a Custom Mashup Processor" Link="/Content/Examples/Creating_a_Custom_Mashup_Processor.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Customize the Move Contact Process" Link="/Content/Examples/Customizing_the_Move_Contact_Process.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Customize the Whats New Module" Link="/Content/Examples/Customizing_the_Whats_New_Module.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Edit Configuration Files" Link="/Content/Examples/editing_configuration_files.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Enable Automatic Project Reload" Link="/Content/Examples/Enabling_automatic_project_reload.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Enable Check for Duplicates for an Entity" Link="/Content/Examples/Enabling_Check_for_Duplicates_for_an_Entity.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Enable Debug Logging for Business Rules" Link="/Content/Examples/enabling_debug_logging_for_business_rules.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Expose Tabs When a Page Loads" Link="/Content/Examples/exposing_tabs_when_a_page_loads.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Format SData Property Values Based on Current Culture" Link="/Content/Examples/Formatting_SData_Property_Values.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Hide/Unhide a Tab at Run-Time" Link="/Content/Examples/Hiding_Unhiding_a_Tab_at_Run-Time.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Insert Code into Events" Link="/Content/Topics/virtual_methods.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Improve Performance of Custom JavaScript" Link="/Content/Examples/improving_performance_of_custom_java_script.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Link to entity views with JavaScript" Link="/Content/Examples/Linking_to_entity_views_with_JavaScript.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Load Multiple Versions of JQuery" Link="/Content/Examples/Loading_Multiple_Versions_of_JQuery.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Localize Strings in Client-Side Code" Link="/Content/Examples/Localizing_Strings_in_Client-Side_Code.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Modifying Job Notification Visibility" Link="/Content/Examples/Modifying_Job_Notification_Visibility.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Redirect Web Client Logoff/Timeout" Link="/Content/Examples/Redirecting_Web_Client_Logoff_Timeout.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Register Scripts Dynamically" Link="/Content/Examples/Registering_scripts_dynamically.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Set the Maximum File Size for the Web Client" Link="/Content/Examples/setting_the_maximum_file_upload_size_for_web_applications.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Set Potential Match Indexing Options" Link="/Content/Examples/Setting_Potential_Match_Indexing_Options.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Troubleshoot Data Binding Errors" Link="/Content/Examples/Troubleshooting_data_binding_errors.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Use the Global CSS Image Sprite" Link="/Content/Examples/Using_the_Global_CSS_Image_Sprite.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Work with Static versus Dynamic Entities through Code" Link="/Content/Examples/Working_with_Static_versus_Dynamic_Entities_through_Code.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Process Orchestration Quick Start" Link="/Content/Process_Orchestration/About_Saleslogix_Process_Orchestration.htm" ComputedFirstTopic="false" DescendantCount="11">
+            <TocEntry Title="Understanding Process Orchestration" Link="/Content/Process_Orchestration/About_Saleslogix_Process_Orchestration.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Implementing Process Orchestration" Link="/Content/Process_Orchestration/Working_with_Process_Orchestration.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Installing Saleslogix VS Workflow Extensions" Link="/Content/Process_Orchestration/Installing_SalesLogix_VS_Workflow_Items.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Building Custom Workflows" Link="/Content/Process_Orchestration/building_custom_workflows.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Creating Security Entities" Link="/Content/Process_Orchestration/Creating_Security_Entities.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Using Policy Activities" Link="/Content/Process_Orchestration/Using_Policy_Activities.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Understanding Goal Driven Workflows" Link="/Content/Process_Orchestration/Understanding_Goal_Driven_Workflows.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Registering Custom Workflows with the ProcessHost" Link="/Content/Process_Orchestration/Registering_Custom_Workflows_with_the_ProcessHost.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Starting Workflows with Database Events" Link="/Content/Process_Orchestration/Starting_Workflows_with_Database_Events.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="Enabling the Process Tasks Tasklet" Link="/Content/Process_Orchestration/Enabling_the_Process_Tasks_Tasklet.htm" ComputedFirstTopic="false" DescendantCount="0" />
+            <TocEntry Title="FAQ and Troubleshooting" Link="/Content/Process_Orchestration/Process_Orchestration_FAQ.htm" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Saleslogix OLE DB Provider" ComputedFirstTopic="false" DescendantCount="0">
+            <TocEntry Title="SLXOLEDBProvider.chm::/SLXOLEDBProvider.hhc" Link="/../../../Project/TOCs/SLXOLEDBProvider.chm#SLXOLEDBProvider.hhc" MarkAsNew="false" ComputedFirstTopic="false" DescendantCount="0" />
+        </TocEntry>
+        <TocEntry Title="Q and A topics" Link="/Content/Q_and_A_Topics.htm" ComputedFirstTopic="false" DescendantCount="0" />
+    </TocEntry>
+</CatapultToc>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="9/13/12 lrw new" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Using the Global CSS Image Sprite</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor70"></a>Using 
+ the Global CSS Image Sprite</h1>
+        <p><span class="PrimaryProductName">Saleslogix</span> uses an 
+ image sprite to reduce the number of server requests for icons. User interface 
+ elements created with Application Architect use the icons by automatically 
+ referencing the appropriate sections of the sprite. &#160;Customizations 
+ can also use the global image sprite to reduce server requests.</p>
+        <p class="Infinitive">To use</p>
+        <ol>
+            <li value="1">Use 
+	 the <span class="SLXBold"><MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Image 
+	 Editor</MadCap:conditionalText></span> to add an image of size 16X16, 24X24, or 32X32 to 
+	 the project or to identify an existing one you want to use.
+            </li>
+            <li value="2">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Build the Web platform. See the Application Architect online help topic "Building the Web Platform"</MadCap:conditionalText>.
+            
+     
+        <br />All images of size 16X16, 24X24, or 32X32 
+ are generated into a single image. Also generated is a style sheet that 
+ contains a class for accessing each icon as well as the classes, Global_Images, 
+ icon32x32, icon24x24, and icon16x16.</li>
+            <li value="3"><![CDATA[
+]]><MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Deploy the portal. See the Application Architect online help topic "Deploying the Saleslogix Web Client Portal"</MadCap:conditionalText>.          
+       
+        <br />The sprite is copied to &lt;portal&gt;\images\icons\Global_Images.png 
+ and the style sheet to &lt;portal&gt;\css\Global_Images.css.</li>
+            <li value="4">In your code, access the icon using three classes 
+	 named Global_Images, icon&lt;sizexsize&gt;, and icon_&lt;yourimagename&gt;.
+            
+        
+        <br />For example, this is the HTML markup for the 
+ welcome icon in the navigation bar:<br /><span class="Code">&lt;div class="Global_Images 
+ icon32x32 icon_welcome_32x32"&gt;&lt;/div&gt;</span><br /><br />As a JavaScript example, look at the cancel 
+ button in OpportunityProducts.js:<br /><span class="Code">imageClass: 'icon_reset_16x16'</span><br /><br />The imageClass property was added to Sage/UI/ImageButton, 
+ Sage/UI/MenuItem, and Sage/UI/MenuBarItem for the client-side framework. 
+ Just set its value to 'icon_&lt;yourimagename&gt;'; it adds the Global_Images 
+ and icon&lt;sizexsize&gt; class names for you.<br /></li>
+            <li value="5">View 
+	 the user interface.
+            <br />The first reference to any icon requests the 
+ sprite from the server. Subsequent icon references use the same sprite 
+ so no additional server request is necessary.</li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

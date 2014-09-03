@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="11/13/12 new" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Adding File Types for Attachments</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor43"></a>Adding File Types for Attachments</h1>
+        <p>When users open an attachment, their browser uses the MIME type of the attachment to determine what player or application to use. If you want to add or change attachment MIME types for your installation, you must edit the web.config file for each portal that supports attachments. In the base product, SlxClient and SLXCustomerPortal support attachments.</p>
+        <p class="Infinitive">To add</p>
+        <ul>
+            <li value="1"><a href="editing_configuration_files.htm">Edit the web.config file</a> with the following changes:
+                   
+              
+                <ol><li class="p-Topic-Text-Lettered" value="1"><p class="Topic-Text-Lettered">Locate the <span class="SLXBold">&lt;staticContent&gt;</span> section.</p></li><li class="p-Topic-Text-Lettered" value="2"><p class="Topic-Text-Lettered">Duplicate a pair of <span class="SLXBold">&lt;remove /&gt;</span> and <span class="SLXBold">&lt;mimeMap /&gt;</span> elements.</p></li><li class="p-Topic-Text-Lettered" value="3"><p class="Topic-Text-Lettered">In the new lines, modify <span class="SLXBold">fileExtension</span> and <span class="SLXBold">mimeType</span>. For example:<span class="Code"><br /><br />&lt;remove fileExtension=".docx" /&gt;<br />&lt;mimeMap fileExtension=".docx" mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/&gt;</span></p></li></ol></li>
+        </ul>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

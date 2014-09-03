@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="102209 lrw new." MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Applying Field Level Security to Entity Insertion</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor45"></a>Applying Field Level Security to Entity Insertion</h1>
+        <p>Field Level Security, by default, does not apply to insertion of new entities. Take for example a user whose Field Level Security specifies no access to the CreditRating property of the Account entity. The user can set the CreditRating property during the insert of a new Account. After the insert, the user cannot change or read the property.</p>
+        <p>You can override the default behavior at the application level so that Field Level Security applies to record inserts. Then the user in the example would still be able to insert the new Account, but any value provided for the CreditRating property would be ignored during the insert.</p>
+        <p class="Infinitive">To override</p>
+        <ul>
+            <li value="1"><a href="editing_configuration_files.htm">Edit the appSettings.config file</a> with the following changes:
+                  
+                <ol><li value="1">In the <span class="SLXBold">appsettings</span> section, locate the value for the <span class="SLXBold"><a name="kanchor46"></a>ApplyFieldLevelSecurityOnInsert</span> key.
+                    </li><li value="2">Modify it. For example:
+<br /><span class="CODE">&lt;add key="ApplyFieldLevelSecurityOnInsert" value="true"&gt;</span> <![CDATA[ ]]></li></ol></li>
+        </ul>
+        <p class="RelatedTopics">Related Topics</p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">"Security Profile Manager" in the Administrator online Help</MadCap:conditionalText> <![CDATA[ ]]></p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="062209 lrw removed remote url to self." MadCap:fileTags="RoboHelpStatus.Ready for Review,RoboHelpCheckList.Ran Smart Index" MadCap:tocPath="Web Developer's Reference|Web Help|Creating Custom Web Help" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Adding or Removing Images in a Help Topic</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor27"></a>Adding 
+ or Removing Images in a Help Topic</h1>
+        <p style="text-align: left;">You can add images to a help topic to display 
+ a button or icon used in the <span class="PrimaryProductName">Saleslogix</span> 
+ Web interface.</p>
+        <p class="Infinitive" style="text-align: left;"><span style="margin-top: 0.0pt;margin-bottom: 0;">To 
+ add</span>
+        </p>
+        <ol>
+            <li value="1">
+               In 
+	 the Application Architect,  <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">open 
+	 the portal</MadCap:conditionalText> for editing.
+            </li>
+            <li value="2">
+               In the Project Explorer tree view, expand <span class="SLXBold">Support 
+	 Files\help\Content</span>.
+            </li>
+            <li value="3">
+              Open 
+	 the subfolder that contains the help topic you want to customize, 
+	 and then double click the topic you want to edit.
+            </li>
+            <li value="4">
+                In 
+	 the help file, add the following where you want to insert the image:
+            </li>
+       
+        &lt;img src="../image/blubull.gif" 
+ /&gt;
+   
+            <li value="5">
+               Change 
+	 the <span style="font-weight: bold;">blubull.gif</span> 
+	 to the file name of the image.
+            </li><li value="6">
+              If 
+	 this is a new image file, you must add it to the portal.
+            
+       
+        <ol><li value="1">
+                In 
+	 the Application Architect, <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">open 
+	 the portal</MadCap:conditionalText> where you are adding the image file.
+            </li><li value="2"><span style="text-align: left;">In the Project Explorer tree view, expand</span> <span class="SLXBold" style="text-align: left;">Support Files</span>, 
+	 and then browse to the <span class="SLXBold">help\Content\image</span> 
+	 folder.
+            </li><li value="3">
+              Right-click 
+	 <span class="SLXBold">images</span>, select <span class="SLXBold">Add 
+	 Existing Files</span>, browse to the file you want to add, and then 
+	 click <span class="SLXBold">Add</span>.
+            </li></ol></li><li value="7">
+            If 
+	 you want the image to be hidden unless a keyword is clicked:
+         
+       
+        <ol><li value="1">
+              Add 
+	 <span class="SLXBold">&lt;span class="MCExpanding"&gt;&lt;a 
+	 href="javascript:void(0);" class="MCExpandingHead" 
+	 onclick="FMCExpand( this ); return false;"&gt;</span> in 
+	 front of the text &#160;to be clicked.
+</li><li value="2">
+                Add 
+	 <span class="SLXBold">&lt;/a&gt;</span> after the text to be clicked.</li><li value="3">
+             Add 
+	 <span class="SLXBold">&lt;span class="MCExpandingBody" style="display: 
+	 none;"&gt;</span> before the image code you added in step 1.</li><li value="4">Add 
+	 the closing tags <span class="SLXBold">&lt;/span&gt;&lt;/span&gt;</span> 
+	 after the image code from step 1.
+ </li></ol></li><li value="8">When 
+	 you have finished adding images, click <span class="SLXBold">Save 
+	 All</span>.
+ </li></ol>
+        <li value="5">  <![CDATA[ ]]></li>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p>Your 
+		 changes will not be visible until you <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">deploy</MadCap:conditionalText> 
+		 the changes to your Web site.</p>
+                </td>
+            </tr>
+        </table>
+        <p>  <![CDATA[ ]]></p>
+        <p class="Infinitive">To remove an image</p>
+        <ol>
+            <li value="1">
+               In 
+	 the Application Architect,  <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">open 
+	 the portal</MadCap:conditionalText> for editing.
+            </li>
+            <li value="2">
+               In the Project Explorer tree view, expand <span class="SLXBold">Support 
+	 Files\help\Content</span>.
+            </li>
+            <li value="3">
+              Open 
+	 the subfolder that contains the help topic you want to customize, 
+	 and then double click the topic you want to edit.
+            </li>
+            <li value="4">
+               In 
+	 the help file, select &#160;the image you want to delete. For example, 
+	 "<span style="text-align: left;">&lt;img src="../image/blubull.gif" 
+	 /&gt;"</span></li>
+            <li value="5">
+               Press 
+	 <span class="SLXBold">Delete</span>.
+            </li>
+            <li value="6">
+               When 
+	 you have finished deleting images, click <span class="SLXBold">Save 
+	 All</span>.
+            </li>
+        </ol>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p>Your 
+		 changes will not be visible until you <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">deploy</MadCap:conditionalText> 
+		 the changes to your Web site.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="RelatedTopics">Related Topics</p>
+        <p><a href="Overview.htm">Web Help Overview</a>
+        </p>
+        <p style="text-align: left;"><a href="Creating_a_Custom_Help_Topic.htm">Creating 
+ a Custom Help Topic</a>
+        </p>
+        <p style="text-align: left;"><a href="Customizing_a_Saleslogix_Web_Help_Topic.htm">Customizing 
+ a <span class="PrimaryProductName">Saleslogix</span> Web Help 
+ Topic</a>
+        </p>
+        <p style="text-align: left;"><a href="Linking_to_Another_Help_Topic.htm">Linking 
+ to Another Help Topic</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

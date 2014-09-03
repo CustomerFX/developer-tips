@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Web Developer's Reference|Process Orchestration Quick Start" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" xmlns="" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <meta name="template" content="SalesLogixFooterHelpLink.htt" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" />
+        <meta name="topic-check-list" content="Added To TOC,Index keywords,Tested,Finalized,Reviewed" />
+        <meta name="topic-status" content="Ready for Review" />
+        <meta name="topic-comment" content="8/26/08 rewritten;10/1/08 chgs for localization. 092109 lrw added build the vs project.111409 fixed indentation of steps in 1, removed note." />
+        <meta name="generator" content="Adobe RoboHelp 10" /><title>Building Custom Workflows</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Building 
+ Custom Workflows</h1>
+        <p class="Topic-Text-Numbered">Use Visual Studio Workflow Designer to create 
+ workflows. Use any mix of Windows Workflow activities, Saleslogix custom activities, 
+ and activities you create. You can bind your workflow to any Saleslogix entity.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%; vertical-align: TOP; padding-left: 6px; padding-top: 6px;      padding-right: 6px; padding-bottom: 6px;">
+                    <p style="text-align: center;                  margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%; padding-left: 6px; padding-top: 6px; padding-right: 6px;      padding-bottom: 6px;">
+                    <p>Before you begin creating workflows 
+		 in Visual Studio, <a href="Installing_SalesLogix_VS_Workflow_Items.htm">install 
+		 Saleslogix 
+		 VS workflow extensions.</a></p>
+                </td>
+            </tr>
+        </table>
+        <p class="Infinitive">To build a workflow</p>
+        <ol>
+            <li value="1"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="1">Create 
+	 your workflow project<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a>.
+                <ol MadCap:targetName="1" xmlns="http://www.w3.org/1999/xhtml" style="display: none;"><li value="1">Launch 
+			 <span class="SLXBold">Visual Studio 2008</span>.
+                    </li><li value="2">On 
+			 the <span class="SLXBold">File</span> menu, click <span class="SLXBold">New 
+			 Project</span>.
+                    </li><li value="3">Select 
+			 <span class="SLXBold">.NET Framework 3.0</span> (or greater) 
+			 in the drop-down list.
+                    </li><li value="4">Expand 
+			 <span class="SLXBold">Visual C#</span>, and select a project 
+			 type of <span class="SLXBold">Workflow</span>.
+                    </li><li value="5">Select 
+			 <span class="SLXBold">Sequential Workflow Library</span>.
+                    </li><li value="6">Name 
+			 your workflow.
+                    </li><li value="7">Click 
+			 <span class="SLXBold">OK</span>.
+                    </li></ol></li>
+            <li value="2"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="2">Add 
+	 references in the project to Saleslogix 
+	 assemblies<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a>.
+                <ol MadCap:targetName="2" xmlns="http://www.w3.org/1999/xhtml" style="display: none;"><li value="1">Right-click 
+			 on the <span class="SLXBold">References</span> node in your 
+			 new Visual Studio project, and click <span class="SLXBold">Add 
+			 Reference</span>.
+                    </li><li value="2">On 
+			 the <span class="SLXBold">Browse</span> tab, navigate to your 
+			 folder of consolidated assemblies, for example, C:\Program 
+			 Files\SalesLogix\ReferenceAssemblies.
+                    </li><li value="3">Select 
+			 the following files and click <span class="SLXBold">OK</span>.
+                        <ul><li value="1">Sage.Platform.dll
+                            </li><li value="2">Sage.Platform.Process.dll
+                            </li><li value="3">Sage.Entity.Interfaces.dll
+                            </li></ul></li><li value="4">Click 
+			 <span class="SLXBold">OK</span>.
+						
+                    
+                   
+                <table wrapperparagraphselector="P" style="margin-top: 14pt; margin-left: 40px;" cellspacing="0" width="98%" xmlns="http://www.w3.org/1999/xhtml"><col style="width: 7.75%;" /><col style="width: 92.25%;" /><tr><td style="width: 7.75%; vertical-align: TOP; padding-left: 6px;        padding-top: 6px; padding-right: 6px; padding-bottom: 6px;"><p style="text-align: center; margin-bottom: 0;"><img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" /></p></td><td style="width: 92.25%; padding-left: 6px; padding-top: 6px;        padding-right: 6px; padding-bottom: 6px;"><p>Ensure 
+				 this copy of Sage.Entity.Interfaces.dll is updated automatically 
+				 each time you build interfaces or the platform. Refer 
+				 to the <a href="Installing_SalesLogix_VS_Workflow_Items.htm">Installing 
+				 SalesLogix VS Workflow Items</a> help topic for more information 
+				 on setting &#160;the Assemblies Path build setting to 
+				 point to the consolidation folder.</p></td></tr></table></li></ol></li>
+            <li value="3"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="3">Change 
+	 the base class<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a> of the workflow.
+                <ol MadCap:targetName="3" xmlns="http://www.w3.org/1999/xhtml" style="display: none;"><li value="1">Click 
+			 in the workflow, click the <span class="SLXBold">Base Class</span> 
+			 box in the <span class="SLXBold">Property</span> grid, and 
+			 click the ellipsis button.
+                  
+           
+                <p class="Topic-Text-Indent2" xmlns="http://www.w3.org/1999/xhtml">The Browse and Select a .NET type 
+		 dialog box opens.</p></li><li value="2">Expand 
+			 the <span class="SLXBold">Sage.Platform.Process</span> node, 
+			 select <span class="SLXBold">Sage.Platform.Process.Activities</span>, 
+			 and then select <span class="SLXBold">SequentialEntityWorkflow</span> 
+			 or <span class="SLXBold">GoalDrivenEntityWorkflow</span>.
+                   
+             
+                <p class="Topic-Text-Indent2" xmlns="http://www.w3.org/1999/xhtml">The <a href="Enabling_the_Process_Tasks_Tasklet.htm">ProcessTasks 
+		 tasklet</a> uses this information to identify the goal-driven 
+		 processes.</p> <![CDATA[ ]]></li><li value="3">Click 
+			 <span class="SLXBold">OK</span>.
+                    </li></ol></li>
+            <li value="4"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="4">Bind 
+	 the workflow to an entity<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a>.
+                <ol MadCap:targetName="4" xmlns="http://www.w3.org/1999/xhtml" style="display: none;"><li value="1">Right-click 
+			 anywhere in the <span class="SLXBold">Workflow Designer</span> 
+			 and click <span class="SLXBold">Select Entity</span>.
+                    </li><li value="2">Select 
+			 the entity type to which you want your workflow bound, and 
+			 click <span class="SLXBold">OK</span>.
+                   
+                <p class="Topic-Text-Indent2" xmlns="http://www.w3.org/1999/xhtml">The header of the Workflow Designer 
+		 indicates that your workflow is now bound to the entity type you 
+		 selected. Notice also the code-behind generated for your workflow: 
+		 &#160;</p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml"><span class="code">public 
+		 Sage.Entity.Interfaces.ILead CurrentEntity &#160;&#160;</span></p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml"><span class="code">{ 
+		 &#160;&#160;</span></p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml"><span class="code">&#160;&#160;&#160;&#160;get 
+		 &#160;</span></p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml"><span class="code">&#160;&#160;&#160;&#160;{ 
+		 &#160;&#160;</span></p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml"><span class="code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;return 
+		 ((Sage.Entity.Interfaces.ILead)(this.GetEntity())); &#160;&#160;</span></p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml"><span class="code">&#160;&#160;&#160;&#160;} 
+		 &#160;&#160;</span></p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml"><span class="code">}</span></p><p class="code-snippet" style="margin-left: 104px;" xmlns="http://www.w3.org/1999/xhtml">&#160;</p><p class="Topic-Text-Indent2" xmlns="http://www.w3.org/1999/xhtml">This code will be useful later when 
+		 you reference the current entity from policies and other workflow 
+		 activities.</p></li></ol></li>
+            <li value="5">If 
+	 necessary, <a href="Creating_Security_Entities.htm">create custom 
+	 security entities</a> for use by your policy activities.
+            </li>
+            <li value="6">Add 
+	 Windows Workflow activities and Saleslogix 
+	 custom activities. Activities to consider using include:
+           
+       
+        <ul><li value="1"><a href="Using_Policy_Activities.htm">Windows Policy Activities</a>, 
+	 good for encoding business rules.
+            </li><li value="2">Saleslogix CreateToDo and CreatePhoneCall 
+	 activities, often used in sequential workflows.
+            </li><li value="3">Saleslogix GoalDrivenActivity, 
+	 GoalActivity, and GoalDrivenScopeActivity, for <a href="Understanding_Goal_Driven_Workflows.htm">goal-driven 
+	 workflows</a>.
+            </li></ul></li>
+            <li value="7">Save 
+	 the changes, and build the Visual Studio project.
+            </li>
+        </ol>
+        <p>Related Topics</p>
+        <p><a href="Working_with_Process_Orchestration.htm">Implementing Process 
+ Orchestration</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="080309 new;111411 moved to appSettings.config" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Troubleshooting Data Binding Errors</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor69"></a>Troubleshooting 
+ Data Binding Errors</h1>
+        <p>In Application Architect, the data binding editor attempts to validate 
+ data binding elements as you set them. However, since there are some things 
+ it cannot evaluate until run time, it may generate breaking data binding 
+ elements. To see data binding errors that happen at run time, turn on 
+ the ShowBindingErrorsAtRuntime flag in the appSettings.config file for 
+ the portal. This visibility can be particularly useful when debugging 
+ custom smart parts.</p>
+        <p class="Infinitive">To turn on</p>
+        <ul>
+            <li value="1"><a href="editing_configuration_files.htm">Edit 
+	 the appSettings.config file</a> with the following changes:
+            
+        <ol><li value="1">Locate 
+	 the following line in the &lt;appsettings&gt; node:
+            
+        
+        <br />&lt;add key="ShowBindingErrorsAtRuntime" 
+ value="false"/&gt;</li><li value="2">Replace 
+	 "false" with "true".</li></ol></li>
+        </ul>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

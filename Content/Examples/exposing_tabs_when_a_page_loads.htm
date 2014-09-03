@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="9/216/08 rewrote for doc audit" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Exposing Tabs When a Page Loads</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor58"></a>Exposing Tabs on Page Load</h1>
+        <p>When a page loads, the tabs are exposed based on the active tab and the remembered tab state. To make a particular tab visible, use one of the following methods according to how the page will be accessed:</p>
+        <p class="Infinitive">To override for a page accessed through a link</p>
+        <ul>
+            <li value="1">On the Querystring, add <span class="code">&amp;activetab=mySmartPartID</span>.
+            </li>
+        </ul>
+        <p class="Topic-Text-Indent">This activates the tab named "mySmartPartID" so that it is open wherever it is mapped (middle pane, main tab area, or MoreTabs tab). If a user accesses the page in a way other than through the link, the remembered tab state is displayed. This method works on any page with a tab workspace.</p>
+        <p class="Topic-Text-Indent"><span class="SLXBold">Example</span> &#160;Link from the "Reminders" view to the Activity List view with the "Confirmations" tab open.</p>
+        <p class="Infinitive">To override for initial page load</p>
+        <ul>
+            <li value="1">In the template properties of the portal page, set the <span class="SLXBold">OverrideActiveTab</span> property to mySmartPartID.
+            </li>
+        </ul>
+        <p class="Topic-Text-Indent">This causes the tab named "mySmartPartID" to be open every time the page loads, regardless of how the user accesses the page. This method works only if the master page exposed the property.</p>
+        <p class="Topic-Text-Indent"><span class="SLXBold">Example</span> Load the Schedule Activity page with the Members tab open.</p>
+        <p class="Topic-Text-Numbered">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

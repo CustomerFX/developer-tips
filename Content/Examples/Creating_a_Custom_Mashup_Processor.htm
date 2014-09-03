@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="1201411 lrw new." MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Resources/TableStyles/Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="copyright" content="" /><title>Creating a Custom Mashup Processor</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor53"></a>Creating a Custom Mashup Processor</h1>
+        <p>Processors are controls that you add to mashups. You can use the ones provided as well as create custom processors.</p>
+        <p class="Infinitive">To create</p>
+        <ol>
+            <li value="1">Create a new Visual Studio project with the class library template.
+            </li>
+            <li value="2">Add project references to Sage.Platform and Sage.Platform.Mashups.
+            </li>
+            <li value="3">Create a class that derives from ProcessorBase with an OnProcess method implementation. For example, following is a basic custom processor that returns a range of integers:
+            
+      
+        <table style="margin-left: auto;margin-right: auto;mc-table-style: url('../Resources/TableStyles/Code.css');" class="TableStyle-Code" cellspacing="0"><col style="width: 100%;" class="TableStyle-Code-Column-Column1" /><tr style="vertical-align: top;" class="TableStyle-Code-Body-Body1"><td style="border: Solid 1px #000000;width: 100%;padding-right: 10px;padding-left: 10px;" class="TableStyle-Code-BodyD-Column1-Body1"><p class="code-snippet"><span style="color: #0000ff;">using</span><span>Sage.Platform.Mashups;</span></p><p class="code-snippet"><span style="color: #0000ff;">using</span><span>Sage.Platform.Mashups.Processors;</span></p><p class="code-snippet"><span style="color: #0000ff;">using</span><span>Sage.Platform.Mashups.Records;</span></p><p class="code-snippet"><span style="color: #0000ff;">namespace</span> Custom_Mashup</p><p class="code-snippet">{</p><p class="code-snippet">&#160;&#160;&#160;&#160;<span style="color: #0000ff;">public class</span><span style="color: #2b91af;">RangeProcessor</span> : <span style="color: #2b91af;">ProcessorBase</span></p><p class="code-snippet">&#160;&#160;&#160;&#160;{</p><p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">public int</span> Start { <span style="color: #0000ff;">get</span>; <span style="color: #0000ff;">set</span>; }</p><p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">public int</span> Count { <span style="color: #0000ff;">get</span>; <span style="color: #0000ff;">set</span>; }</p><p class="code-snippet">&#160;</p><p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">protected override</span><span style="color: #2b91af;">IEnumberable</span>&lt;<span style="color: #2b91af;">IRecord</span>&gt; OnProcess(<span style="color: #2b91af;">IDictionary</span>&lt;<span style="color: #0000ff;">string</span>, <span style="color: #2b91af;">RecordStream</span>&gt; results, <span style="color: #2b91af;">IDictionary</span>&lt;<span style="color: #0000ff;">string</span>, <span style="color: #0000ff;">object</span>&gt; runtimeParams)</p><p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</p><p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">return</span><span style="color: #2b91af;">Enumberable</span>.Range(Start, Count).Select(i =&gt; <span style="color: #2b91af;">RecordBase</span>.CreateRecord(i));</p><p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</p><p class="code-snippet">&#160;&#160;&#160;&#160;}</p><p class="code-snippet">}</p></td></tr></table></li>
+            <p class="Topic-Text-Indent">&#160;</p>
+            <li value="4">Copy the assembly containing the processor class into the same folder in which Sage.Platform.Mashups.dll is installed. For example, C:\Program Files\SalesLogix\Platform.
+            </li>
+            <li value="5">Add the processor type to the MashupConfiguration.xml configuration file:
+            </li>
+            <ol>
+                <li value="1">
+               Browse to the location of the file. The default paths for the file are:
+                <ul><li value="1">
+                        Windows 2003/XP: \\Documents and Settings\All Users\Application Data\Sage\Platform\Configuration\Global
+                    </li><li value="2">
+                        Windows 2008/Vista/7: \\ProgramData\Sage\Platform\Configuration\Global<br /><br />Note: &#160;If necessary, create the file by  <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">editing a mashup</MadCap:conditionalText> and closing Application Architect. <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">See "Editing a Mashup in the Application Architect online Help.
+</MadCap:conditionalText><![CDATA[                    ]]></li></ul></li>
+                <li value="2">Open the MashupConfiguration.xml in a text editor such as Notepad.
+            </li>
+                <li value="3">Add a new &lt;processorType&gt; entry after the last one in the file. For example, &lt;processorType&gt;Namespace.Processor, AssemblyName&lt;/ProcessorType&gt;
+            </li>
+                <li value="4">Save changes and close the file.
+            </li>
+            </ol>
+            <li value="6">Begin to <a href="ApplicationArchitect.chm::/MashupModel/Editing_a_Mashup.htm">add a new processor</a> to a mashup to verify the new processor type appears in the Mashup Designer right-click menu.
+ <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">See "Adding Processors" in the Application Architect online Help.
+</MadCap:conditionalText><![CDATA[            ]]></li>
+        </ol>
+        <p class="subheading">Executing A Custom Processor</p>
+        <p>The steps involved in executing a mashup containing an instance of a custom processor are similar.</p>
+        <p class="Infinitive">To execute</p>
+        <ol>
+            <li value="1">Copy the assembly into the SData portal bin folder.
+            </li>
+            <li value="2">Register the processor type in the MashupConfiguration.xml configuration file in the portal root.
+            </li>
+            <li value="3">Restart the SData mashup adapter by restarting the web server or touching one of the portal files. (For example, add a space character somewhere in web.config.)
+            
+        <p>Once restarted, the SData mashup adapter will detect this new processor type and generate everything it needs to serialize instances of this processor in both ATOM and JSON metadata feeds.</p></li>
+        </ol>
+        <p class="subheading">Advanced example</p>
+        <p>The above example is the minimum required to implement a processor. However, there are a few conventions that should be followed for well behaved, robust, localizable processor implementations.</p>
+        <p>Here is a more robust implementation of the simple example processor above:<br />&#160;</p>
+        <table style="vertical-align: top;left: 0px;top: 1051px;margin-left: auto;margin-right: auto;width: 879;mc-table-style: url('../Resources/TableStyles/Code.css');" cellspacing="0" bgcolor="#EEEEEE" class="TableStyle-Code">
+            <col style="width: 100%;" class="TableStyle-Code-Column-Column1" />
+            <tr style="vertical-align: top;" class="TableStyle-Code-Body-Body1">
+                <td style="border: Solid 1px #000000;width: 100%;padding-right: 10px;padding-left: 10px;" class="TableStyle-Code-BodyD-Column1-Body1">
+                    <p class="code-snippet"><span style="color: #0000ff;">using</span> Sage.Platform.Mashups;</p>
+                    <p class="code-snippet"><span style="color: #0000ff;">using</span> Sage.Platform.Mashups.Processors;</p>
+                    <p class="code-snippet"><span style="color: #0000ff;">using</span> Sage.Platform.Mashups.Records;</p>
+                    <p class="code-snippet">&#160;</p>
+                    <p class="code-snippet"><span style="color: #0000ff;">namespace</span> Custom_Mashup</p>
+                    <p class="code-snippet">&#160;&#160;&#160;&#160;[<span style="color: #2b91af;">SRDisplayName</span>(<span style="color: #2b91af;">SR</span>.RangeProcessor_DisplayName)]<br />&#160;&#160;&#160;&#160;[<span style="color: #2b91af;">XmlRoot</span>(<span style="color: #a31515;">"rangeProcessor"</span>)]<br />&#160;&#160;&#160;&#160;<span style="color: #0000ff;">public</span>&#160;<span style="color: #0000ff;">class</span>&#160;<span style="color: #2b91af;">RangeProcessor</span>&#160;:&#160;<span style="color: #2b91af;">ProcessorBase</span><br />&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">private</span>&#160;<span style="color: #0000ff;">int</span>&#160;_start;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">private</span>&#160;<span style="color: #0000ff;">int</span>&#160;_count&#160;=&#160;10;<br />&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[<span style="color: #2b91af;">SRDisplayName</span>(<span style="color: #2b91af;">SR</span>.RangeProcessor_Start_DisplayName)]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[<span style="color: #2b91af;">XmlAttribute</span>(<span style="color: #a31515;">"start"</span>)]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">public</span>&#160;<span style="color: #0000ff;">int</span>&#160;Start<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">get</span>&#160;{&#160;<span style="color: #0000ff;">return</span>&#160;_start;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">set</span>&#160;{&#160;<span style="color: #0000ff;">this</span>.SetProperty(<span style="color: #a31515;">"Start"</span>,&#160;<span style="color: #0000ff;">ref</span>&#160;_start,&#160;<span style="color: #0000ff;">value</span>);&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[<span style="color: #2b91af;">SRDisplayName</span>(<span style="color: #2b91af;">SR</span>.RangeProcessor_Count_DisplayName)]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[<span style="color: #2b91af;">DefaultValue</span>(10)]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[<span style="color: #2b91af;">XmlAttribute</span>(<span style="color: #a31515;">"count"</span>)]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">public</span>&#160;<span style="color: #0000ff;">int</span>&#160;Count<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">get</span>&#160;{&#160;<span style="color: #0000ff;">return</span>&#160;_count;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">set</span>&#160;{&#160;<span style="color: #0000ff;">this</span>.SetProperty(<span style="color: #a31515;">"Count"</span>,&#160;<span style="color: #0000ff;">ref</span>&#160;_count,&#160;<span style="color: #0000ff;">value</span>);&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">public</span>&#160;<span style="color: #0000ff;">override</span>&#160;<span style="color: #2b91af;">IEnumerable</span>&lt;<span style="color: #0000ff;">string</span>&gt;&#160;PropertyNames<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">get</span>&#160;{&#160;<span style="color: #0000ff;">return</span>&#160;<span style="color: #0000ff;">new</span>[]&#160;{<span style="color: #a31515;">"Value"</span>};&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">protected</span>&#160;<span style="color: #0000ff;">override</span>&#160;<span style="color: #2b91af;">IEnumerable</span>&lt;<span style="color: #2b91af;">IRecord</span>&gt;&#160;OnProcess(<span style="color: #2b91af;">IDictionary</span>&lt;<span style="color: #0000ff;">string</span>,&#160;<span style="color: #2b91af;">RecordStream</span>&gt;&#160;results,&#160;<span style="color: #2b91af;">IDictionary</span>&lt;<span style="color: #0000ff;">string</span>,&#160;<span style="color: #0000ff;">object</span>&gt;&#160;runtimeParams)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">return</span>&#160;<span style="color: #2b91af;">Enumerable</span>.Range(Start,&#160;Count).Select(i&#160;=&gt;&#160;<span style="color: #2b91af;">RecordBase</span>.CreateRecord(i));<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">protected</span>&#160;<span style="color: #0000ff;">override</span>&#160;<span style="color: #0000ff;">bool</span>&#160;DoValidation(<span style="color: #2b91af;">ErrorMessageList</span>&#160;errorList)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">var</span>&#160;isValid&#160;=&#160;<span style="color: #0000ff;">base</span>.DoValidation(errorList);<br />&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">if</span>&#160;(_count&#160;&lt;&#160;0)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;isValid&#160;=&#160;<span style="color: #0000ff;">false</span>;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;AddError(errorList,&#160;<span style="color: #a31515;">"Count"</span>,&#160;<span style="color: #2b91af;">Resources</span>.RangeProcessor_CountLessThanZero);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #0000ff;">return</span>&#160;isValid;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;}</p>
+                    <p class="code-snippet">}</p>
+                </td>
+            </tr>
+        </table>
+        <p class="code-snippet" style="margin-left: 0px;">&#160;</p>
+        <p>The above example improves upon the original in the following ways:</p>
+        <ul>
+            <li value="1">Localizable display name attributes on the processor itself and all public properties. Without this all names are displayed as is regardless of the user's current UI culture.
+            </li>
+            <li value="2">An XML root attribute that explicitly specifies the model item and SData serialized root element name. Without this the type name is assumed.
+            </li>
+            <li value="3">XML attribute attributes on all public properties with camel case names. Without this Pascal-cased XML elements are used. This still works but goes against our established serialization conventions.
+            </li>
+            <li value="4">Use of the SetProperty method which raises the NotifyPropertyChanged event when property values change. Without this the mashup designer does not know to update the UI when values are changed in the property grid.
+            </li>
+            <li value="5">Useful default values and the default value attribute. Without this new instances may be created in an unusable state and properties will always appear bold in the property grid even if unchanged.
+            </li>
+            <li value="6">Override the DoValidation method and perform validation checks. Without this the user will not be visually notified when the processor is in an invalid state. The processor can also be executed while invalid causing potentially unhelpful run-time errors.
+            </li>
+            <li value="7">Override the PropertyNames property with property names available at run time. Without this certain areas of the designer UI will not be able to make useful run-time property suggestions.
+            </li>
+        </ul>
+        <p class="RelatedTopics">Related Topics</p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Working with Mashups" in the Application Architect online Help</MadCap:conditionalText>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

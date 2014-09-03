@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" xmlns="" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <meta name="template" content="SalesLogixFooterHelpLink.htt" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" />
+        <meta name="topic-status" content="Ready for Review" />
+        <meta name="topic-comment" content="8/30/12 lrw new" />
+        <meta name="generator" content="Adobe RoboHelp 10" /><title>Customizing the Move Contact Process</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Customizing 
+ the Move Contact Process</h1>
+        <p>The Move Contact process provides several opportunities for customization.</p>
+        <p class="Infinitive">How Do I?</p>
+        <div class="MCDropDown_0" xmlns="">
+            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_2781175443_0" onclick="FMCDropDown( this ); return false;">Secure 
+ access to Move or Copy action<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
+            </div>
+            <div class="MCDropDownBody" id="MCDropDownBody_2781175443_0" style="display: none;">
+                <p xmlns="http://www.w3.org/1999/xhtml">On the Contact Detail view toolbar, the Move and Duplicate Contact 
+	 buttons have their own secured actions assigned to them — ENTITIES/CONTACT/MOVE and ENTITIES/CONTACT/COPY, 
+	 respectively.</p>
+                <ul xmlns="http://www.w3.org/1999/xhtml">
+                    <li value="1">Manage access to the buttons 
+		 independent of each other by assigning their secured actions to 
+		 the appropriate roles.<br />		For instance, you could limit access to Duplicate Contacts by removing 
+		 &#160;ENTITIES/CONTACT/COPY from the standard user role.
+                    </li>
+                </ul>
+                <p xmlns="http://www.w3.org/1999/xhtml">Refer to "What are Roles and Secured Actions?" in the 
+	 Saleslogix Web Client 
+	 Help for more information.</p>
+            </div>
+        </div>
+        <div class="MCDropDown_0" xmlns="">
+            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_2781175443_1" onclick="FMCDropDown( this ); return false;">Override 
+ business rule logic for an entity<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
+            </div>
+            <div class="MCDropDownBody" id="MCDropDownBody_2781175443_1" style="display: none;">
+                <p xmlns="http://www.w3.org/1999/xhtml">The Contact.MoveContact business rule has a post execute step for 
+	 each entity type associated with contacts.</p>
+                <ul xmlns="http://www.w3.org/1999/xhtml">
+                    <li value="1">You can override the move 
+		 behavior for an entity type by creating a replacement post execute 
+		 step for it.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="MCDropDown_0" xmlns="">
+            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_2781175443_2" onclick="FMCDropDown( this ); return false;">Remove 
+ an entity type from the Move Contact process<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
+            </div>
+            <div class="MCDropDownBody" id="MCDropDownBody_2781175443_2" style="display: none;">
+                <ul xmlns="http://www.w3.org/1999/xhtml">
+                    <li value="1">If you want to remove 
+		 an entity such as tickets from the Move Contact Process, remove 
+		 its corresponding post execute step in the Contact.MoveContact 
+		 business rule.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="MCDropDown_0" xmlns="">
+            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_2781175443_3" onclick="FMCDropDown( this ); return false;">Add 
+ an entity type to the Move Contact process<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
+            </div>
+            <div class="MCDropDownBody" id="MCDropDownBody_2781175443_3" style="display: none;">
+                <p xmlns="http://www.w3.org/1999/xhtml">You can incorporate additional entity types including custom ones 
+	 into the Move Contact process.</p>
+                <p class="Infinitive" xmlns="http://www.w3.org/1999/xhtml">To add</p>
+                <ol xmlns="http://www.w3.org/1999/xhtml">
+                    <li value="1">The 
+		 Move Contact dialog gives the user choices about moving associated 
+		 records such as whether they should move, and if so, to what contact. 
+		 If you want to offer move options for the entity type you are 
+		 adding to the process, modify MoveContact.aspx.
+                    </li>
+                    <li value="2">In 
+		 the code behind, add a section for the new entity type that loads 
+		 the move options into a moveContactArguments object. For example, 
+		 copy and modify the block for Literature Requests:<span class="Code"><br /><br />		//Literature Requests Options<br />		moveOption = new MoveItemOption<br />		&#160;{<br />		&#160;&#160;&#160;&#160;&#160;Entity = "LitRequest",<br />		&#160;&#160;&#160;&#160;&#160;OpenItemsOnly = true,<br />		&#160;&#160;&#160;&#160;&#160;ClosedItemsOnly = true,<br />		&#160;&#160;&#160;&#160;&#160;ReassignTo = openItemsReassignContact.Id,<br />		&#160;&#160;&#160;&#160;&#160;ReassignToClosed = closedItemsReassignContact.Id,<br />		&#160;&#160;&#160;&#160;&#160;MoveToAccount = false<br />		&#160;};<br />		arguments.Items.Add(moveOption);<br /><br /></span></li>
+                    <li value="3">To 
+		 the Contact.MoveContact business rule, add a post execute step 
+		 containing the move logic for the new entity type. For example, 
+		 here is the &#160;post execution step for Literature Requests, 
+		 MoveContactLitRequests:
+                    </li>
+                </ol>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">public 
+	 static void MoveContactLitRequests(IContact contact, MoveArguments 
+	 moveArguments, out bool result)</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;result 
+	 = true;</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;if 
+	 (CS$&lt;&gt;9__CachedAnonymousMethodDelegate13 == null)</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CS$&lt;&gt;9__CachedAnonymousMethodDelegate13 
+	 = new Func&lt;MoveItemOption, bool&gt;(null, (IntPtr) &lt;MoveContactLitRequests&gt;b__10);</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;MoveItemOption 
+	 options = Enumerable.FirstOrDefault&lt;MoveItemOption&gt;(moveArguments.Items, 
+	 CS$&lt;&gt;9__CachedAnonymousMethodDelegate13);</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;if 
+	 (options != null)</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if 
+	 (options.OpenItemsOnly &amp;&amp; (options.ReassignTo != null))</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if 
+	 (CS$&lt;&gt;9__CachedAnonymousMethodDelegate14 == null)</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CS$&lt;&gt;9__CachedAnonymousMethodDelegate14 
+	 = new Func&lt;ILitRequest, bool&gt;(null, (IntPtr) &lt;MoveContactLitRequests&gt;b__11);</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;foreach 
+	 (ILitRequest litRequest in Enumerable.Where&lt;ILitRequest&gt;(contact.LitRequests, 
+	 CS$&lt;&gt;9__CachedAnonymousMethodDelegate14))</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;litRequest.Contact 
+	 = GetContact(options.ReassignTo);</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;litRequest.ContactName 
+	 = litRequest.Contact.Name;</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if 
+	 (options.ClosedItemsOnly &amp;&amp; (options.ReassignToClosed != null))</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if 
+	 (CS$&lt;&gt;9__CachedAnonymousMethodDelegate15 == null)</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CS$&lt;&gt;9__CachedAnonymousMethodDelegate15 
+	 = new Func&lt;ILitRequest, bool&gt;(null, (IntPtr) &lt;MoveContactLitRequests&gt;b__12);</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;foreach 
+	 (ILitRequest litRequest in Enumerable.Where&lt;ILitRequest&gt;(contact.LitRequests, 
+	 CS$&lt;&gt;9__CachedAnonymousMethodDelegate15))</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;litRequest.Contact 
+	 = GetContact(options.ReassignToClosed);</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;litRequest.ContactName 
+	 = litRequest.Contact.Name;</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;contact.Save();</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">&#160;&#160;&#160;&#160;}</span>
+                </P>
+                <P class="code-snippet" xmlns="http://www.w3.org/1999/xhtml"><span class="Code" xmlns="http://www.w3.org/1999/xhtml">}</span>
+                </P>
+            </div>
+        </div>
+        <p class="RelatedTopics">Related Topics</p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">"Understanding Secured Actions" in the Application Architect online Help</MadCap:conditionalText>
+        </p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">"Managing 
+ Business Rules" </MadCap:conditionalText>in the Application Architect online Help</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

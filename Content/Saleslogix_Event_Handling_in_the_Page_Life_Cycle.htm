@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.augusta" MadCap:comment="051711 jrn new topic" MadCap:fileTags="RoboHelpStatus.In Progress" MadCap:tocPath="Web Developer's Reference" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Saleslogix Event Handling in the Page Life Cycle</title>
+        <link href="Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><span class="PrimaryProductName">Saleslogix</span><a name="kanchor3"></a> Event Handling in the 
+ Page Life Cycle</h1>
+        <p>Using Microsoft's familiar explanation of a page life cycle, this topic 
+ explains the expected <span class="PrimaryProductName">Saleslogix</span> 
+ behaviors at each stage.</p>
+        <p>When an ASP.NET page runs, the page goes through a life cycle in which 
+ it performs a series of processing steps. These include initialization, 
+ instantiating controls, restoring and maintaining state, running event 
+ handler code, and rendering.</p>
+        <p><span class="PrimaryProductName">Saleslogix</span> performs 
+ specific actions during the different stages of the page life cycle. It 
+ is important to note that the following pattern happens every time there 
+ is a postback. &#160;Postbacks are triggered when the user changes a tab, 
+ changes a value in a control that contains a change action, or clicks 
+ a button (such as Save). All of these actions cause ALL of the following 
+ steps to happen:</p>
+        <h5>Page request</h5>
+        <p>The page request occurs before the page life cycle begins. When the 
+ page is requested by a user, ASP.NET determines whether the page needs 
+ to be parsed and compiled (beginning the life of a page), or whether a 
+ cached version of the page can be sent in response without running the 
+ page.</p>
+        <h5>Start</h5>
+        <p>At this stage, page properties such as <span class="SLXBold">Request</span> 
+ and <span class="SLXBold">Response</span> are set. &#160;The page also 
+ determines whether the request is a postback or a new request and sets 
+ the <span class="SLXBold">IsPostBack</span> property. &#160;The start 
+ step, the page's UICulture property is also set during this stage.</p>
+        <h5>Page initialization</h5>
+        <p>During page initialization, controls on the page are available and each 
+ control's <span class="SLXBold">UniqueID</span> property is set. Any themes 
+ are also applied to the page. If the current request is a postback, the 
+ postback data has not yet been loaded and control property values have 
+ not been restored to the values from view state.</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets">During this stage, if <span class="PrimaryProductName">Saleslogix</span> is in detail mode, 
+	 the correct entity is pulled from NHibernate. &#160;If the page workitem 
+	 statebag (that is stored in the asp.net session) contains unsaved 
+	 changes from previous postbacks that need to be applied to the entity, 
+	 they are applied at this time. &#160;So, now the entity is the up-to-date 
+	 with all of the user’s current changes.</p>
+            </li>
+        </ul>
+        <h5>Load</h5>
+        <p>During load, if the current request is a postback, control properties 
+ are loaded with information recovered from view state and control state.</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets"><span class="PrimaryProductName">Saleslogix</span> 
+	 loads all the smart parts into the workspaces. &#160;As each one is 
+	 “loaded”, ASP.net brings it through the PageInit and PageLoad phase 
+	 to have it catch up to where the page is in its lifecycle.</p>
+            </li>
+            <li class="p-Bullets" value="2">
+                <p class="Bullets">During the PareInit phase, 
+	 each smart part creates the databindings it needs and change event 
+	 listeners are attached to the controls and the entity. &#160;NO DATABINDING 
+	 HAPPENS AT THIS POINT THOUGH.</p>
+            </li>
+        </ul>
+        <h5>Validation</h5>
+        <p>During validation, the <span class="SLXBold">Validate</span> method 
+ of all validator controls is called, which sets the IsValid property of 
+ individual validator controls and of the page.</p>
+        <h5>Postback event handling</h5>
+        <p>If the request is a postback, any event handlers are called.</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets">Controls that have change 
+	 events fire – since the databindings are listening to these events, 
+	 they catch the new values and apply them to the current entity. &#160;Any 
+	 control change actions also run.</p>
+            </li>
+            <li class="p-Bullets" value="2">
+                <p class="Bullets">Button click events are processed. 
+	 &#160;If the user clicked the Save button, this is where the save 
+	 action and business rule would happen. &#160;</p>
+            </li>
+        </ul>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;margin-left: 40px;" cellspacing="0" width="93.558%">
+            <col style="width: 5.237%;" />
+            <col style="width: 94.763%;" />
+            <tr>
+                <td style="width: 5.237%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;margin-left: 0px;">
+                        <img src="Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 94.763%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="margin-left: 0px;">Button click events are processed 
+		 after the controls have fired their change events and the entity 
+		 now has all changes that were posted to the server.</p>
+                </td>
+            </tr>
+        </table>
+        <h5>Rendering</h5>
+        <p>Before rendering, view state is saved for the page and all controls.</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets">If form load actions were 
+	 defined in the quickform, they are called at this point. &#160;There 
+	 is a check to see if they were marked to run every cycle, or just 
+	 when there is a new entity.</p>
+            </li>
+            <li class="p-Bullets" value="2">
+                <p class="Bullets">Since nothing else is going 
+	 to change in the entity because all events and business rules have 
+	 fired/run, the <span class="PrimaryProductName">Saleslogix</span> 
+	 databindings apply the values from the entity to the controls.</p>
+            </li>
+        </ul>
+        <p>During the rendering phase, the page calls the <span class="SLXBold">Render</span> 
+ method for each control, providing a text writer that writes its output 
+ to the <span class="SLXBold">OutputStream</span> of the page's <span class="SLXBold">Response</span> 
+ property.</p>
+        <h5>Unload</h5>
+        <p>Unload is called after the page has been fully rendered, sent to the 
+ client, and is ready to be discarded. At this point, page properties such 
+ as <span class="SLXBold">Response</span> and <span class="SLXBold">Request</span> 
+ are unloaded and any cleanup is performed.</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets"><span class="PrimaryProductName">Saleslogix</span> 
+	 checks the current entity for any unsaved changes. &#160;If changes 
+	 exist, they are saved to the page workitem statebag (asp.net session) 
+	 ready for the next cycle.</p>
+            </li>
+        </ul>
+        <p>For more information about page life cycles and ASP.NET, see Microsoft's 
+ article <span class="SLXBold">ASP.NET Page Life Cycle Overview</span>.</p>
+        <p class="RelatedTopics">Related Topics</p>
+        <p class="Bullets"><a href="Topics/virtual_methods.htm">Virtual Methods</a>
+        </p>
+        <p class="Bullets">&#160;</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

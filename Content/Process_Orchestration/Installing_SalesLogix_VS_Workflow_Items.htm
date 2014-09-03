@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" MadCap:tocPath="Web Developer's Reference|Process Orchestration Quick Start" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" xmlns="" />
+        <meta name="template" content="SalesLogixFooterHelpLink.htt" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" />
+        <meta name="topic-check-list" content="Added To TOC,Index keywords,Tested,Finalized,Reviewed" />
+        <meta name="topic-status" content="Ready for Review" />
+        <meta name="topic-comment" content="new;10/1/08 chgs for localization. 081409 lrw added consolidated assemblies ex: ReferenceAssemblies.092109 lrw exe name changed.;123009 path." />
+        <meta name="generator" content="Adobe RoboHelp 10" /><title>Installing &lt;ProductName&gt; VS Workflow Items</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <?rh-script_start ?>
+        <script src="../ehlpdhtm.js" type="text/javascript" language="JavaScript1.2">
+        </script>
+        <?rh-script_end ?>
+        <h1>Installing <?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?> 
+ VS Workflow Items</h1>
+        <p>The <?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?> Visual 
+ Studio Workflow Extensions is a set of tools for creating <?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?>-specific Windows Workflows.</p>
+        <p class="Infinitive">To install &#160;&#160;&#160;&#160;&#160;&#160;</p>
+        <ol>
+            <li class="p-Topic-Text-Numbered" value="1">
+                <p class="Topic-Text-Numbered">Ensure 
+	 that Visual Studio 2008 is installed.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="2">
+                <p class="Topic-Text-Numbered">On 
+	 the <?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?> 
+	 DVD, browse to the <span class="SLXBold">Installs &gt; </span><span style="font-weight: bold;"><?rh-udv_start name="VS_Workflow_Extensions_folder" ?>Saleslogix VS Workflow Extensions<?rh-udv_end ?></span> 
+	 folder, and double-click <span class="SLXBold">setup.exe</span>.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="3">
+                <p class="Topic-Text-Numbered">Click 
+	 <span class="SLXBold">Next</span>.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="4">
+                <p class="Topic-Text-Numbered">On 
+	 the <span class="SLXBold">License Agreement</span> screen, read the 
+	 information, accept the agreement, and then click <span class="SLXBold">Next</span>.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="5">
+                <p class="Topic-Text-Numbered">Select 
+	 a setup type of <span class="SLXBold">Complete</span>, and click <span class="SLXBold">Install</span>.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="6">
+                <p class="Topic-Text-Numbered">Click 
+	 <span class="SLXBold">Finish</span>.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="7">
+                <p class="Topic-Text-Numbered">
+                    <?rh-dropspot_start class="dropspot" href="javascript:TextPopup(this)" id="a1" dataid="POPUP223459039" ?>Consolidate 
+	 assemblies<?rh-dropspot_end ?> so you can easily reference them in 
+	 your Visual Studio project.</p>
+                <?rh-droptext_start class="droptext" id="POPUP223459039" style="display: none;" ?>
+                <p class="Infinitive">To consolidate</p>
+                <ol>
+                    <li class="p-Topic-Text-Lettered" value="1">
+                        <p class="Topic-Text-Lettered">On 
+			 the Application Architect <span class="SLXBold">Tools</span> 
+			 menu, click <span class="SLXBold">Build Settings</span>.<br />
+			The Edit Build Settings dialog box opens.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="2">
+                        <p class="Topic-Text-Lettered">If 
+			 necessary, in the <span class="SLXBold">Assemblies Path</span> 
+			 box, type or browse to a folder name where you want to copy 
+			 assemblies, for example, C:\Program Files\SalesLogix\ReferenceAssemblies.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="3">
+                        <p class="Topic-Text-Lettered">Click 
+			 <span class="SLXBold">OK</span>.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="4">
+                        <p class="Topic-Text-Lettered">On 
+			 the Application Architect <span class="SLXBold">Tools</span> 
+			 menu, click <span class="SLXBold">Copy Assemblies</span>.<br />
+			Assemblies required by Process Orchestration are copied into 
+			 the folder you specified.<br /><br />
+			As with any other assemblies you reference in your Visual Studio 
+			 workflow projects, reference the copy of Sage.Entity.Interfaces.dll 
+			 in this folder because Application Architect automatically 
+			 updates it each time you build interfaces or build the platform.</p>
+                    </li>
+                </ol>
+                <?rh-droptext_end ?>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="8">
+                <p class="Topic-Text-Numbered">
+                    <?rh-dropspot_start class="dropspot" href="javascript:TextPopup(this)" id="a2" dataid="POPUP223711477" ?>Create 
+	 Toolbox Items<?rh-dropspot_end ?>.</p>
+                <?rh-droptext_start class="droptext" id="POPUP223711477" style="display: none;" ?>
+                <p class="Infinitive">To create</p>
+                <ol>
+                    <li class="p-Topic-Text-Lettered" value="1">
+                        <p class="Topic-Text-Lettered">Open 
+			 the VS Toolbox.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="2">
+                        <p class="Topic-Text-Lettered">Right-click 
+			 in the toolbox pane, &#160;select <span class="SLXBold">Add 
+			 Tab</span>, and create a <span class="SLXBold"><?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?></span><span class="SLXBold">  <![CDATA[ ]]></span>tab.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="3">
+                        <p class="Topic-Text-Lettered">Right-click 
+			 the <span class="SLXBold"><?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?></span><span class="SLXBold">  <![CDATA[ ]]></span>tab, and select <span class="SLXBold">Choose 
+			 Items.</span><br />
+			The Choose Toolbox Items dialog box opens.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="4">
+                        <p class="Topic-Text-Lettered">Click 
+			 the <span class="SLXBold">Activities</span> tab, click <span class="SLXBold">Browse</span>, and browse to the consolidated 
+			 assemblies folder.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="5">
+                        <p class="Topic-Text-Lettered">Select 
+			 Sage.SalesLogix.Process.Activities.dll, and click <span class="SLXBold">Open</span>.<br />
+			This assembly contains the <?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?> 
+			 custom activities for sequential workflows.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="6">
+                        <p class="Topic-Text-Lettered">Make 
+			 sure the activities in the Sage.SalesLogix.Process.Activities 
+			 namespace are checked, and click <span class="SLXBold">OK</span>.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="7">
+                        <p class="Topic-Text-Lettered">Right-click 
+			 the <span class="SLXBold"><?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?></span><span class="SLXBold">  <![CDATA[ ]]></span>tab, select <span class="SLXBold">Choose 
+			 Items.</span></p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="8">
+                        <p class="Topic-Text-Lettered">Click 
+			 the <span class="SLXBold">Activities</span> tab, click <span class="SLXBold">Browse</span>, and browse to the consolidated 
+			 assemblies folder, for example, C:\Program Files\SalesLogix\ReferenceAssemblies.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="9">
+                        <p class="Topic-Text-Lettered">Select 
+			 Sage.Platform.Process.dll, and click <span class="SLXBold">Open</span>.<br />
+			This assembly contains the <?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?> 
+			 custom activities for goal-driven workflows.</p>
+                    </li>
+                    <li class="p-Topic-Text-Lettered" value="10">
+                        <p class="Topic-Text-Lettered">Make 
+			 sure the activities in the Sage.Platform.Process.Activities 
+			 namespace are checked, and click <span class="SLXBold">OK</span>.</p>
+                    </li>
+                </ol>
+                <p class="Topic-Text-Indent2">Note: The tools display on the <span class="SLXBold" style="font-weight: normal;"><?rh-udv_start name="ProductName" ?>Saleslogix<?rh-udv_end ?></span><span class="SLXBold">  <![CDATA[ ]]></span>tab only after you open or create a project.</p>
+                <?rh-droptext_end ?>
+            </li>
+        </ol>
+        <p class="Infinitive">Related Topics</p>
+        <p class="Bullets"><a href="Working_with_Process_Orchestration.htm">Implementing 
+ Process Orchestration</a>
+        </p>
+        <p class="Bullets">&#160;</p>
+        <?rh-placeholder type="footer" ?>
+        <?rh-script_start ?>
+        <script type="text/javascript" language="JavaScript1.2">///*<![CDATA[*/
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP223459039');
+	TextPopupInit('a2', 'POPUP223711477');
+///*]]>*/</script>
+        <?rh-script_end ?>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

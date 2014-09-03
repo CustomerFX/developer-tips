@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTargetIndex Count="167">
+    <IndexEntry>
+        <Entries>
+            <IndexEntry Term="About Sage Data (SData)">
+                <Entries />
+                <Links>
+                    <IndexLink Title="About Sage Data (SData)" Link="/Content/Web_Services/SData.htm#kanchor16" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Action Security">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Applying Action Security to Custom Forms" Link="/Content/Examples/Applying_Action_Security_to_Custom_Forms.htm#kanchor44" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Active Tab, Change for MultiTab control">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Changing the Active Tab and Captions on a MultiTab Control" Link="/Content/Examples/Changing_the_Active_Tab_and_Captions_on_a_MultiTab_Control.htm#kanchor47" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Add conditions to Customer Portal lookup">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Conditions to Lookups in &lt;PortalCustomer&gt;" Link="/Content/Examples/Adding_Conditions_to_Lookups_in_Customer_Portal.htm#kanchor37" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Adding a Help Alias">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding a Help Topic Alias" Link="/Content/CustomWebHelp/adding_an_help_topic_alias.htm#kanchor32" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Adding an image to a help topic">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding or Removing Images in a Help Topic" Link="/Content/CustomWebHelp/adding_an_image_to_a_help_topic.htm#kanchor27" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Adding help topic to VFS">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Custom Help Topics to a Project" Link="/Content/CustomWebHelp/Adding_Custom_Help_Topics.htm#kanchor31" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Adding MIME types">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding File Types for Attachments" Link="/Content/Examples/Adding_FIle_Types_for_Attachments.htm#kanchor43" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="ApplyFieldLevelSecurityOnInsert">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Applying Field Level Security to Entity Insertion" Link="/Content/Examples/Applying_Field_Level_Security_to_Entity_Insertion.htm#kanchor46" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Attachments;adding file types">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding File Types for Attachments" Link="/Content/Examples/Adding_FIle_Types_for_Attachments.htm#kanchor43" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Automatic project reload">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Enabling automatic project reload" Link="/Content/Examples/Enabling_automatic_project_reload.htm#kanchor55" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Bar Chart Sparkline">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Bar Chart Sparkline" Link="/Content/Web_Services/Sparklines/bar_chart_sparkline.htm#kanchor88" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Bullet Chart Sparkline">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Bullet Chart Sparkline" Link="/Content/Web_Services/Sparklines/bullet_chart_sparkline.htm#kanchor89" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="bundlediff.exe">
+                <Entries />
+                <Links>
+                    <IndexLink Title="BundleDiff.exe" Link="/Content/Utilities/BundleDiff.exe.htm#kanchor11" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="bundler.exe">
+                <Entries />
+                <Links>
+                    <IndexLink Title="bundler.exe" Link="/Content/Utilities/bundler.exe.htm#kanchor12" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Business Rules">
+                <Entries>
+                    <IndexEntry Term="Add custom entity to merge">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding a Custom Entity to a Merge Business Rule" Link="/Content/Examples/Adding_a_Custom_Entity_to_a_Merge_Business_Rule.htm#kanchor42" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Enable Debug Logging for">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Enabling Debug Logging for Business Rules" Link="/Content/Examples/enabling_debug_logging_for_business_rules.htm#kanchor57" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="CAB">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Key CAB Concepts" Link="/Content/CAB_Concepts/Key_CAB_Concepts.htm#kanchor5" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Cache Server">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Configuring the &lt;ProductName&gt; Cache Server" Link="/Content/Examples/Configuring_the_SalesLogix_Cache_Server.htm#kanchor51" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Change Active Tab in MultiTab Control">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Changing the Active Tab and Captions on a MultiTab Control" Link="/Content/Examples/Changing_the_Active_Tab_and_Captions_on_a_MultiTab_Control.htm#kanchor47" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Client-side form validation">
+                <Entries />
+                <Links>
+                    <IndexLink Title="About Client-Side Validation" Link="/Content/About_Client-Side_Form_Validation.htm#kanchor4" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Column Sparkline">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Column Sparkline" Link="/Content/Web_Services/Sparklines/column_sparkline.htm#kanchor90" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="ContextualListConfiguration.xml">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Contextual Awareness for Custom Entity Main Views" Link="/Content/Examples/Adding_Contextual_Awareness_for_Custom_Entity_Main_Views.htm#kanchor39" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="ContextualListConfiguration.xml file" Link="/Content/Examples/ContextualListConfiguration.xml.htm#kanchor85" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Creating help topic">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Creating a Custom Help Topic" Link="/Content/CustomWebHelp/Creating_a_Custom_Help_Topic.htm#kanchor30" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Cultures; adding">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Culture to List in Form Designer" Link="/Content/Examples/Adding_Culture_to_List_in_Form_Designer.htm#kanchor41" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Custom controls">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Hosting Custom Controls in Quick Form Designer" Link="/Content/CustomQuickFormControls/Hosting_Custom_Controls_in_Quick_Form_Designer.htm#kanchor83" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Custom Entity Main Views">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Contextual Awareness for Custom Entity Main Views" Link="/Content/Examples/Adding_Contextual_Awareness_for_Custom_Entity_Main_Views.htm#kanchor38" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Custom Forms">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Applying Action Security to Custom Forms" Link="/Content/Examples/Applying_Action_Security_to_Custom_Forms.htm#kanchor44" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Custom Web Help">
+                <Entries>
+                    <IndexEntry Term="adding a help alias">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding a Help Topic Alias" Link="/Content/CustomWebHelp/adding_an_help_topic_alias.htm#kanchor32" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="adding a topic to table of contents">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Include a Topic in the TOC" Link="/Content/CustomWebHelp/Include_a_Custom_Topic_in_the_TOC.htm#kanchor34" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="adding an image">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding or Removing Images in a Help Topic" Link="/Content/CustomWebHelp/adding_an_image_to_a_help_topic.htm#kanchor27" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="adding new help topic to project">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding Custom Help Topics to a Project" Link="/Content/CustomWebHelp/Adding_Custom_Help_Topics.htm#kanchor31" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="adding to table of contents">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Include a Topic in the TOC" Link="/Content/CustomWebHelp/Include_a_Custom_Topic_in_the_TOC.htm#kanchor34" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="adding topic to index">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Include a Topic in the Index" Link="/Content/CustomWebHelp/Include_a_Topic_in_the_Index.htm#kanchor33" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="creating a custom topic">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Creating a Custom Help Topic" Link="/Content/CustomWebHelp/Creating_a_Custom_Help_Topic.htm#kanchor30" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="customizing a help topic">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Customizing a &lt;ProductName&gt; Web Help Topic" Link="/Content/CustomWebHelp/Customizing_a_Saleslogix_Web_Help_Topic.htm#kanchor25" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="finding portal help files">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Finding Portal Help Files" Link="/Content/CustomWebHelp/Finding_Portal_Help_Files.htm#kanchor84" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="formatting with .css">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Formatting Custom Web Help with help.css" Link="/Content/CustomWebHelp/Formatting_Custom_Web_Help_with_help.css.htm#kanchor28" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="including a topic in the table of contents">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Include a Topic in the TOC" Link="/Content/CustomWebHelp/Include_a_Custom_Topic_in_the_TOC.htm#kanchor34" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="linking to another topic">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Linking to Another Help Topic" Link="/Content/CustomWebHelp/Linking_to_Another_Help_Topic.htm#kanchor26" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="linking topic to button">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Linking a Help Topic to a Help Button" Link="/Content/CustomWebHelp/Linking_a_Help_Topic_to_a_Help_button.htm#kanchor35" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="overview">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Web Help Overview" Link="/Content/CustomWebHelp/Overview.htm#kanchor24" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="upgrading customized help">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Upgrading Customized Help" Link="/Content/CustomWebHelp/Upgrading_Customized_Help.htm#kanchor36" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links>
+                    <IndexLink Title="Web Help Overview" Link="/Content/CustomWebHelp/Overview.htm#kanchor24" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Customer Portal Lookup">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Conditions to Lookups in &lt;PortalCustomer&gt;" Link="/Content/Examples/Adding_Conditions_to_Lookups_in_Customer_Portal.htm#kanchor37" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Data binding errors">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Troubleshooting Data Binding Errors" Link="/Content/Examples/Troubleshooting_data_binding_errors.htm#kanchor69" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Databinding errors">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Troubleshooting Data Binding Errors" Link="/Content/Examples/Troubleshooting_data_binding_errors.htm#kanchor69" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Dbeventing;Pre-conditions">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Pre-Conditions in Process Orchestration" Link="/Content/Process_Orchestration/Pre-Conditions_in_Process_Orchestration.htm#kanchor86" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Debugging;Enable logging for business rules">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Enabling Debug Logging for Business Rules" Link="/Content/Examples/enabling_debug_logging_for_business_rules.htm#kanchor57" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Deleting Topics from a Project">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Deleting Topics from a Project" Link="/Content/CustomWebHelp/Removing_Topics_from_a_Project.htm#kanchor29" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Development">
+                <Entries />
+                <Links>
+                    <IndexLink Title="&lt;ProductName&gt; Web Application Developer Experience" Link="/Content/Topics/web_application_developer_experience.htm#kanchor1" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Discrete Sparkline">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Discrete Sparkline" Link="/Content/Web_Services/Sparklines/discrete_sparkline.htm#kanchor91" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Dynamic entities and relationships">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Working with Static versus Dynamic Entities through Code" Link="/Content/Examples/Working_with_Static_versus_Dynamic_Entities_through_Code.htm#kanchor71" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="EnableAutoReload">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Enabling automatic project reload" Link="/Content/Examples/Enabling_automatic_project_reload.htm#kanchor56" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Entity views">
+                <Entries>
+                    <IndexEntry Term="Linking to main or dialog">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Linking to Entity Views with JavaScript" Link="/Content/Examples/Linking_to_entity_views_with_JavaScript.htm#kanchor61" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links>
+                    <IndexLink Title="Linking to Entity Views with JavaScript" Link="/Content/Examples/Linking_to_entity_views_with_JavaScript.htm#kanchor61" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Event handling">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Saleslogix Event Handling in the Page Life Cycle" Link="/Content/Saleslogix_Event_Handling_in_the_Page_Life_Cycle.htm#kanchor3" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Field Level Security">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Applying Field Level Security to Entity Insertion" Link="/Content/Examples/Applying_Field_Level_Security_to_Entity_Insertion.htm#kanchor45" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="FindOrphans.exe">
+                <Entries />
+                <Links>
+                    <IndexLink Title="FindOrphans.exe" Link="/Content/Utilities/FindOrphans.exe.htm#kanchor13" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="FLS (Field Level Security)">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Applying Field Level Security to Entity Insertion" Link="/Content/Examples/Applying_Field_Level_Security_to_Entity_Insertion.htm#kanchor45" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Form validation">
+                <Entries />
+                <Links>
+                    <IndexLink Title="About Client-Side Validation" Link="/Content/About_Client-Side_Form_Validation.htm#kanchor4" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Formatting help topic with .css">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Formatting Custom Web Help with help.css" Link="/Content/CustomWebHelp/Formatting_Custom_Web_Help_with_help.css.htm#kanchor28" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Formatting strings">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Formatting SData Property Values" Link="/Content/Examples/Formatting_SData_Property_Values.htm#kanchor59" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="fscopy.exe">
+                <Entries />
+                <Links>
+                    <IndexLink Title="fscopy.exe" Link="/Content/Utilities/fscopy.exe.htm#kanchor14" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Functions">
+                <Entries />
+                <Links>
+                    <IndexLink Title="HQL Queries - Supported Functions" Link="/Content/Supported_Functions/hql_queries_-_supported_functions.htm#kanchor21" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Help button">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Linking a Help Topic to a Help Button" Link="/Content/CustomWebHelp/Linking_a_Help_Topic_to_a_Help_button.htm#kanchor35" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Help Index">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Include a Topic in the Index" Link="/Content/CustomWebHelp/Include_a_Topic_in_the_Index.htm#kanchor33" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="How Do I">
+                <Entries>
+                    <IndexEntry Term="Add Conditions to Lookups in Customer Portal">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding Conditions to Lookups in &lt;PortalCustomer&gt;" Link="/Content/Examples/Adding_Conditions_to_Lookups_in_Customer_Portal.htm#kanchor37" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Add Contextual Awareness for Custom Entity Main Views">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding Contextual Awareness for Custom Entity Main Views" Link="/Content/Examples/Adding_Contextual_Awareness_for_Custom_Entity_Main_Views.htm#kanchor38" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Apply Action Security to Custom Forms">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Applying Action Security to Custom Forms" Link="/Content/Examples/Applying_Action_Security_to_Custom_Forms.htm#kanchor44" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Apply Field Level Security to Entity Insertion">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Applying Field Level Security to Entity Insertion" Link="/Content/Examples/Applying_Field_Level_Security_to_Entity_Insertion.htm#kanchor45" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Change the Active Tab on a MultiTab Control">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Changing the Active Tab and Captions on a MultiTab Control" Link="/Content/Examples/Changing_the_Active_Tab_and_Captions_on_a_MultiTab_Control.htm#kanchor47" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="Setting the Maximum File Size for the Web Client" Link="/Content/Examples/setting_the_maximum_file_upload_size_for_web_applications.htm#kanchor68" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Change the logo">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Changing Logo in &lt;PortalPrimary&gt;" Link="/Content/Examples/Changing_logo_in_SalesLogix_Web_client.htm#kanchor48" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Change the Quick Form Type">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Changing the Quick Form Type" Link="/Content/Examples/Changing_the_Quick_Form_Type.htm#kanchor49" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Configure Cache Server">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Configuring the &lt;ProductName&gt; Cache Server" Link="/Content/Examples/Configuring_the_SalesLogix_Cache_Server.htm#kanchor51" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Consume SData through the Web Client">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Consuming SData through the Web Client" Link="/Content/Examples/Consuming_SData_through_the_Web_Client.htm#kanchor52" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Customize the Whats New Module">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Customizing the Whats New Module" Link="/Content/Examples/Customizing_the_Whats_New_Module.htm#kanchor54" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Enable Debug Logging for Business Rules">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Enabling Debug Logging for Business Rules" Link="/Content/Examples/enabling_debug_logging_for_business_rules.htm#kanchor57" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Expose Tabs When a Page Loads">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Exposing Tabs When a Page Loads" Link="/Content/Examples/exposing_tabs_when_a_page_loads.htm#kanchor58" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Format SData Property Values">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Formatting SData Property Values" Link="/Content/Examples/Formatting_SData_Property_Values.htm#kanchor59" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Link to Entity Views with JavaScript">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Linking to Entity Views with JavaScript" Link="/Content/Examples/Linking_to_entity_views_with_JavaScript.htm#kanchor61" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Redirect Web Client Logoff Timeout">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Redirecting Web Client Logoff Timeout" Link="/Content/Examples/Redirecting_Web_Client_Logoff_Timeout.htm#kanchor66" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Register Scripts Dynamically">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Registering Scripts Dynamically" Link="/Content/Examples/Registering_scripts_dynamically.htm#kanchor67" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Set the Maximum File Size for Web Client">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Setting the Maximum File Size for the Web Client" Link="/Content/Examples/setting_the_maximum_file_upload_size_for_web_applications.htm#kanchor68" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Troubleshoot Data Binding Errors">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Troubleshooting Data Binding Errors" Link="/Content/Examples/Troubleshooting_data_binding_errors.htm#kanchor69" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Work with Static versus Dynamic Entities through Code">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Working with Static versus Dynamic Entities through Code" Link="/Content/Examples/Working_with_Static_versus_Dynamic_Entities_through_Code.htm#kanchor71" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="HQL">
+                <Entries />
+                <Links>
+                    <IndexLink Title="HQL Queries - Supported Functions" Link="/Content/Supported_Functions/hql_queries_-_supported_functions.htm#kanchor21" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Image;CSS sprite">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Using the Global CSS Image Sprite" Link="/Content/Examples/Using_the_Global_CSS_Image_Sprite.htm#kanchor70" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Impulse Sparkline">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Impulse Sparkline" Link="/Content/Web_Services/Sparklines/impulse_sparkline.htm#kanchor92" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Java script references">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Registering Scripts Dynamically" Link="/Content/Examples/Registering_scripts_dynamically.htm#kanchor67" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="javascript">
+                <Entries />
+                <Links>
+                    <IndexLink Title="JavaScript and VBScript" Link="/Content/Topics/javascript_and_vbscript.htm#kanchor2" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Registering Scripts Dynamically" Link="/Content/Examples/Registering_scripts_dynamically.htm#kanchor67" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="q and a custom script load order" Link="/Content/q_and_a_custom_script_load_order.htm#kanchor81" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Job Notifications">
+                <Entries>
+                    <IndexEntry Term="Modifying">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Modifying Job Notification Visibility" Link="/Content/Examples/Modifying_Job_Notification_Visibility.htm#kanchor63" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="URL Example">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Modifying Job Notification Visibility" Link="/Content/Examples/Modifying_Job_Notification_Visibility.htm#kanchor65" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links>
+                    <IndexLink Title="Modifying Job Notification Visibility" Link="/Content/Examples/Modifying_Job_Notification_Visibility.htm#kanchor64" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Job Server">
+                <Entries />
+                <Links>
+                    <IndexLink Title="About Job Server" Link="/Content/Web_Services/About_Job_Server.htm#kanchor19" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="jQuery">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Loading Multiple Versions of JQuery" Link="/Content/Examples/Loading_Multiple_Versions_of_JQuery.htm#kanchor62" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Linking Help">
+                <Entries>
+                    <IndexEntry Term="linking to a quick form">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Linking a Help Topic to a Help Button" Link="/Content/CustomWebHelp/Linking_a_Help_Topic_to_a_Help_button.htm#kanchor35" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="linking to another help topic">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Linking to Another Help Topic" Link="/Content/CustomWebHelp/Linking_to_Another_Help_Topic.htm#kanchor26" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Logging">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Enabling Debug Logging for Business Rules" Link="/Content/Examples/enabling_debug_logging_for_business_rules.htm#kanchor57" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Logo, Replace in Web Client">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Changing Logo in &lt;PortalPrimary&gt;" Link="/Content/Examples/Changing_logo_in_SalesLogix_Web_client.htm#kanchor48" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Logoff page;change">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Redirecting Web Client Logoff Timeout" Link="/Content/Examples/Redirecting_Web_Client_Logoff_Timeout.htm#kanchor66" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Main view">
+                <Entries>
+                    <IndexEntry Term="Adding Contextual Awareness for Custom Entity Main Views">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding Contextual Awareness for Custom Entity Main Views" Link="/Content/Examples/Adding_Contextual_Awareness_for_Custom_Entity_Main_Views.htm#kanchor38" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Changing to Summary view">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Changing the Quick Form Type" Link="/Content/Examples/Changing_the_Quick_Form_Type.htm#kanchor49" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Mashup Processor;creating custom">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Creating a Custom Mashup Processor" Link="/Content/Examples/Creating_a_Custom_Mashup_Processor.htm#kanchor53" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Maximum File Size for Web Client">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Setting the Maximum File Size for the Web Client" Link="/Content/Examples/setting_the_maximum_file_upload_size_for_web_applications.htm#kanchor68" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Merge Records;Add custom entities">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding a Custom Entity to a Merge Business Rule" Link="/Content/Examples/Adding_a_Custom_Entity_to_a_Merge_Business_Rule.htm#kanchor42" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="MIME types;adding">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding File Types for Attachments" Link="/Content/Examples/Adding_FIle_Types_for_Attachments.htm#kanchor43" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="modelutility.exe">
+                <Entries />
+                <Links>
+                    <IndexLink Title="modelutility.exe" Link="/Content/Utilities/modelutility.exe.htm#kanchor15" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Modifying">
+                <Entries>
+                    <IndexEntry Term="Job Notification Visibility">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Modifying Job Notification Visibility" Link="/Content/Examples/Modifying_Job_Notification_Visibility.htm#kanchor63" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links>
+                    <IndexLink Title="Modifying Job Notification Visibility" Link="/Content/Examples/Modifying_Job_Notification_Visibility.htm#kanchor63" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="MultiTab Control, Change Active Tab">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Changing the Active Tab and Captions on a MultiTab Control" Link="/Content/Examples/Changing_the_Active_Tab_and_Captions_on_a_MultiTab_Control.htm#kanchor47" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="NHibernate">
+                <Entries />
+                <Links>
+                    <IndexLink Title="HQL Queries - Supported Functions" Link="/Content/Supported_Functions/hql_queries_-_supported_functions.htm#kanchor22" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Nulls;Comparing in SData queries">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Comparing Nulls in SData Queries" Link="/Content/Supported_Functions/Comparing_Nulls_in_SData_Queries.htm#kanchor50" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="ObjectBuilder">
+                <Entries />
+                <Links>
+                    <IndexLink Title="ObjectBuilder" Link="/Content/CAB_Concepts/ObjectBuilder.htm#kanchor6" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Page Life Cycle">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Saleslogix Event Handling in the Page Life Cycle" Link="/Content/Saleslogix_Event_Handling_in_the_Page_Life_Cycle.htm#kanchor3" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Pie Chart Sparkline">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Pie Chart Sparkline" Link="/Content/Web_Services/Sparklines/pie_chart_sparkline.htm#kanchor93" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="pin attribute">
+                <Entries />
+                <Links>
+                    <IndexLink Title="q and a custom script load order" Link="/Content/q_and_a_custom_script_load_order.htm#kanchor80" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Pre-conditions;Process Orchestration">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Pre-Conditions in Process Orchestration" Link="/Content/Process_Orchestration/Pre-Conditions_in_Process_Orchestration.htm#kanchor86" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Process Orchestration">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Understanding Process Orchestration" Link="/Content/Process_Orchestration/About_Saleslogix_Process_Orchestration.htm#kanchor72" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Implementing Process Orchestration" Link="/Content/Process_Orchestration/Working_with_Process_Orchestration.htm#kanchor73" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Creating Security Entities" Link="/Content/Process_Orchestration/Creating_Security_Entities.htm#kanchor74" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Understanding Goal Driven Workflows" Link="/Content/Process_Orchestration/Understanding_Goal_Driven_Workflows.htm#kanchor75" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Registering Custom Workflows with the ProcessHost" Link="/Content/Process_Orchestration/Registering_Custom_Workflows_with_the_ProcessHost.htm#kanchor76" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Starting Workflows with Database Events" Link="/Content/Process_Orchestration/Starting_Workflows_with_Database_Events.htm#kanchor77" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Enabling the Process Tasks Tasklet" Link="/Content/Process_Orchestration/Enabling_the_Process_Tasks_Tasklet.htm#kanchor78" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Process Orchestration FAQ" Link="/Content/Process_Orchestration/Process_Orchestration_FAQ.htm#kanchor79" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Pre-Conditions in Process Orchestration" Link="/Content/Process_Orchestration/Pre-Conditions_in_Process_Orchestration.htm#kanchor86" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Project;adding help topic to project">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Custom Help Topics to a Project" Link="/Content/CustomWebHelp/Adding_Custom_Help_Topics.htm#kanchor31" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Quick Form;Changing type">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Changing the Quick Form Type" Link="/Content/Examples/Changing_the_Quick_Form_Type.htm#kanchor49" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Redirect logoff and timeout">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Redirecting Web Client Logoff Timeout" Link="/Content/Examples/Redirecting_Web_Client_Logoff_Timeout.htm#kanchor66" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Registering script references">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Registering Scripts Dynamically" Link="/Content/Examples/Registering_scripts_dynamically.htm#kanchor67" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Removing a help button link on a quick form">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Linking a Help Topic to a Help Button" Link="/Content/CustomWebHelp/Linking_a_Help_Topic_to_a_Help_button.htm#kanchor35" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Removing a link to a help topic">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Linking to Another Help Topic" Link="/Content/CustomWebHelp/Linking_to_Another_Help_Topic.htm#kanchor26" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Removing an image from a help topic">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding or Removing Images in a Help Topic" Link="/Content/CustomWebHelp/adding_an_image_to_a_help_topic.htm#kanchor27" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Replace logo in Web client">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Changing Logo in &lt;PortalPrimary&gt;" Link="/Content/Examples/Changing_logo_in_SalesLogix_Web_client.htm#kanchor48" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Sage Data">
+                <Entries />
+                <Links>
+                    <IndexLink Title="&lt;ProductName&gt; Implementation SData 1.1 Specification" Link="/Content/Web_Services/Saleslogix_Implementation_SData_1.0_Specification.htm#kanchor87" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Sage Data (SData)">
+                <Entries />
+                <Links>
+                    <IndexLink Title="About Sage Data (SData)" Link="/Content/Web_Services/SData.htm#kanchor18" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Script references">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Registering Scripts Dynamically" Link="/Content/Examples/Registering_scripts_dynamically.htm#kanchor67" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="SData">
+                <Entries>
+                    <IndexEntry Term="Comparing Nulls">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Comparing Nulls in SData Queries" Link="/Content/Supported_Functions/Comparing_Nulls_in_SData_Queries.htm#kanchor50" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Consume through Web Client">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Consuming SData through the Web Client" Link="/Content/Examples/Consuming_SData_through_the_Web_Client.htm#kanchor52" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Supported Functions">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="SData - Supported Functions" Link="/Content/Supported_Functions/SData_-_Supported_Functions.htm#kanchor23" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links>
+                    <IndexLink Title="About Sage Data (SData)" Link="/Content/Web_Services/SData.htm#kanchor17" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Formatting SData Property Values" Link="/Content/Examples/Formatting_SData_Property_Values.htm#kanchor59" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="&lt;ProductName&gt; Implementation SData 1.1 Specification" Link="/Content/Web_Services/Saleslogix_Implementation_SData_1.0_Specification.htm#kanchor87" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="SData/Feed off">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Why SData Might be Turned Off" Link="/Content/q_and_a_sdata_off.htm#kanchor82" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Setting Maximum File Size in Web Client">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Setting the Maximum File Size for the Web Client" Link="/Content/Examples/setting_the_maximum_file_upload_size_for_web_applications.htm#kanchor68" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Smooth Sparkline">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Smooth Sparkline" Link="/Content/Web_Services/Sparklines/smooth_sparkline.htm#kanchor94" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Sparklines">
+                <Entries>
+                    <IndexEntry Term="Bar Chart">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Bar Chart Sparkline" Link="/Content/Web_Services/Sparklines/bar_chart_sparkline.htm#kanchor88" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Bullet">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Bullet Chart Sparkline" Link="/Content/Web_Services/Sparklines/bullet_chart_sparkline.htm#kanchor89" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Column">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Column Sparkline" Link="/Content/Web_Services/Sparklines/column_sparkline.htm#kanchor90" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Discrete">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Discrete Sparkline" Link="/Content/Web_Services/Sparklines/discrete_sparkline.htm#kanchor91" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Impulse">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Impulse Sparkline" Link="/Content/Web_Services/Sparklines/impulse_sparkline.htm#kanchor92" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Pie Chart">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Pie Chart Sparkline" Link="/Content/Web_Services/Sparklines/pie_chart_sparkline.htm#kanchor93" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="Smooth">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Smooth Sparkline" Link="/Content/Web_Services/Sparklines/smooth_sparkline.htm#kanchor94" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links>
+                    <IndexLink Title="sparklines" Link="/Content/Web_Services/sparklines.htm#kanchor20" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Sprite, CSS image">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Using the Global CSS Image Sprite" Link="/Content/Examples/Using_the_Global_CSS_Image_Sprite.htm#kanchor70" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="SQL Where Clause">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding Conditions to Lookups in &lt;PortalCustomer&gt;" Link="/Content/Examples/Adding_Conditions_to_Lookups_in_Customer_Portal.htm#kanchor37" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Static entities and relationships">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Working with Static versus Dynamic Entities through Code" Link="/Content/Examples/Working_with_Static_versus_Dynamic_Entities_through_Code.htm#kanchor71" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Summary view;Changing Main View to">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Changing the Quick Form Type" Link="/Content/Examples/Changing_the_Quick_Form_Type.htm#kanchor49" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Support Files">
+                <Entries>
+                    <IndexEntry Term="ConceptualListConfiguration.xml">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="ContextualListConfiguration.xml file" Link="/Content/Examples/ContextualListConfiguration.xml.htm#kanchor85" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="ContextualListConfiguration.xml">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding Contextual Awareness for Custom Entity Main Views" Link="/Content/Examples/Adding_Contextual_Awareness_for_Custom_Entity_Main_Views.htm#kanchor39" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Table of Contents">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Include a Topic in the TOC" Link="/Content/CustomWebHelp/Include_a_Custom_Topic_in_the_TOC.htm#kanchor34" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Tabs">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Exposing Tabs When a Page Loads" Link="/Content/Examples/exposing_tabs_when_a_page_loads.htm#kanchor58" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Tools">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Using Automation Tools" Link="/Content/Utilities/using_build_and_deploy_automation_tools.htm#kanchor10" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Validation, Client-side">
+                <Entries />
+                <Links>
+                    <IndexLink Title="About Client-Side Validation" Link="/Content/About_Client-Side_Form_Validation.htm#kanchor4" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Validation, Client-side form">
+                <Entries />
+                <Links>
+                    <IndexLink Title="About Client-Side Validation" Link="/Content/About_Client-Side_Form_Validation.htm#kanchor4" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="vbscript">
+                <Entries />
+                <Links>
+                    <IndexLink Title="JavaScript and VBScript" Link="/Content/Topics/javascript_and_vbscript.htm#kanchor2" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Virtual methods">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Virtual Methods" Link="/Content/Topics/virtual_methods.htm#kanchor60" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Visible tab">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Exposing Tabs When a Page Loads" Link="/Content/Examples/exposing_tabs_when_a_page_loads.htm#kanchor58" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="What's New Module, Customizing">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Customizing the Whats New Module" Link="/Content/Examples/Customizing_the_Whats_New_Module.htm#kanchor54" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Work items">
+                <Entries />
+                <Links>
+                    <IndexLink Title="WorkItems" Link="/Content/CAB_Concepts/WorkItems.htm#kanchor7" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Accessing a Page WorkItem from a Smart Part" Link="/Content/CAB_Concepts/accessing_a_page_workitem_from_a_smart_part.htm#kanchor9" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Workspaces">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Workspaces" Link="/Content/CAB_Concepts/Workspaces.htm#kanchor8" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+        </Entries>
+        <Links />
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+    </IndexEntry>
+</CatapultTargetIndex>

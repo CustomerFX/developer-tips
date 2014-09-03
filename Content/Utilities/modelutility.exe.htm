@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="moved utilities up one level out of the Architect folder;9/30/08 chgs for localization;123009 lrw path." MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|Utilities" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>modelutility.exe</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor15"></a>ModelUtility.exe</h1>
+        <p>ModelUtility.exe automates command-line builds of the Sage.Entity.Interfaces.dll 
+ and the 'Web classes' of the associated implementation assemblies such 
+ as Sage.SalesLogix.Entities.dll. For information on the arguments of this 
+ utility, type the utility name at a command line prompt in the <span class="PrimaryProductName">Saleslogix</span> install directory on 
+ the Administrative Workstation.</p>
+        <p><span style="margin-top: 0.0;margin-bottom: 0.0;">T</span>he following 
+ table describes the most common ModelUtility.exe usage scenarios:</p>
+        <p>&#160;</p>
+        <table style="vertical-align: top;" cellspacing="0" width="100%">
+            <col style="width: 50%;" />
+            <col style="width: 50%;" />
+            <tr style="vertical-align: top;">
+                <td style="border: Solid 1px #000000;width: 50%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">Usage Scenario</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 50%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Tabletop">Command-line options</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 50%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">Build the Sage.Entity.Interfaces.dll 
+		 using an exported model from the c:\projects\mycustomermodel 
+		 to the c:\temp output folder.</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 50%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">C:\&gt;modelutility<br />
+		--model:c:\projects\mycustomermodel--type:Interfaces --output:c:\temp</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 50%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">Build the interfaces 
+		 and implementation assemblies using the same folders.</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 50%;padding-right: 10px;padding-left: 10px;">
+                    <p class="Table">C:\&gt;modelutility--model:c:\</p>
+                </td>
+            </tr>
+        </table>
+        <p class="RelatedTopics">Related Topics</p>
+        <p><a href="using_build_and_deploy_automation_tools.htm">Using Automation 
+ Tools</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="071509 lrw new. 080509 lrw used editing web.config better;111411 moved to appSettings.config" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Redirecting Web Client Logoff Timeout</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor66"></a>Redirecting Web Client Logoff/Timeout</h1>
+        <p>By default, the <span class="PrimarySLXWebClient">Saleslogix Web Client</span> 
+ redirects to the logoff.aspx page when it times out or logs off. You can 
+ edit the appSettings.config file to redirect to another page.</p>
+        <p class="Infinitive">To redirect</p>
+        <ul>
+            <li value="1"><a href="editing_configuration_files.htm">Edit 
+	 the appSettings.config file</a> with the following changes:
+           
+        <ol><li value="1">In 
+	 the <span class="SLXBold">appsettings</span> section, locate the value 
+	 for the <span class="SLXBold">LogoffRedirectUrl</span> 
+	 key. </li><li value="2">Modify 
+	 it. For example:
+           
+        
+        <br />&lt;add key="LogoffRedirectUrl" 
+ value="~/logoff.aspx"/&gt;<br />where value can be a relative path such as ~/logon.aspx or any full URL 
+ such as http://www.mycompany.com</li></ol></li>
+        </ul>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

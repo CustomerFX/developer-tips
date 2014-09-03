@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="102209 lrw new." MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>q and a custom script load order</title>
+        <link href="Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">Why 
+ does my custom script not get loaded in the order expected?</h1>
+        <p class="Infinitive">Background</p>
+        <p>When you add a script reference to a page, it may not load in the order 
+ you expected.</p>
+        <p class="Infinitive">Answer</p>
+        <p class="Topic-Text-Numbered"><a name="kanchor80"></a>The App_Code\scriptdeferfilter.cs code searches 
+ the rendered html for all the script blocks that do not have the pin attribute. 
+ It moves them to the bottom of the page to reduce processing before the 
+ page is displayed to the user.</p>
+        <p class="Topic-Text-Numbered">To "pin" a script block to its 
+ location in the markup, use the <span class="PrimaryProductName">Saleslogix</span> 
+ pin attribute. For example, in base.master:</p>
+        <p class="Topic-Text-Numbered">&#160;</p>
+        <p class="code-snippet"><a name="kanchor81"></a>&lt;script pin="pin" type="text/javascript" 
+ src="Libraries/jQuery/jquery.js"&gt;&lt;/script&gt;</p>
+        <p class="code-snippet">&#160;</p>
+        <p>From ClientGroupContextService.cs is an example using ScriptManager:</p>
+        <p>&#160;</p>
+        <p class="code-snippet">LookupManagerConstants obj = new LookupManagerConstants();</p>
+        <p class="code-snippet">string script = string.Format("&lt;script 
+ pin=\"pin\" type=\"text/javascript\"&gt;window.lookupSetupObject 
+ = {0};&lt;/script&gt;", obj.ToJson());</p>
+        <p class="code-snippet">ScriptManager.RegisterClientScriptBlock(Page, GetType(), 
+ "lookupconstants", script, false);</p>
+        <p class="code-snippet">&#160;</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

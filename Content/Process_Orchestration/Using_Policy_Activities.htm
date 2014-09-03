@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" MadCap:tocPath="Web Developer's Reference|Process Orchestration Quick Start" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" xmlns="" />
+        <meta name="template" content="SalesLogixFooterHelpLink.htt" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" />
+        <meta name="topic-check-list" content="Added To TOC,Index keywords,Tested,Finalized,Reviewed" />
+        <meta name="topic-comment" content="8/4/08 new;10/1/08 chgs for localization" />
+        <meta name="generator" content="Adobe RoboHelp 10" /><title>Using Policy Activities</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <?rh-script_start ?>
+        <script src="../ehlpdhtm.js" type="text/javascript" language="JavaScript1.2">
+        </script>
+        <?rh-script_end ?>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">Using 
+ Policy Activities</h1>
+        <p>Policy activities in Windows Workflow allow a workflow designer to set 
+ up complex business rules based on conditions and actions.</p>
+        <p class="Infinitive">To create a policy activity</p>
+        <ol>
+            <li class="p-Topic-Text-Numbered" value="1">
+                <p class="Topic-Text-Numbered">From 
+	 the Visual Studio toolbox under Windows Workflow v3.0, drag the <span class="SLXBold">Policy</span> item into the designer of your new workflow.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="2">
+                <p class="Topic-Text-Numbered">In 
+	 the <span class="SLXBold">Property</span> grid, click on the <span class="SLXBold">RuleSetReference</span> property box, and then click 
+	 the ellipsis button.<br />
+	The Select Rule Set dialog box opens.</p>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="3">
+                <p class="Topic-Text-Numbered">Add 
+	 your business rules. <?rh-dropspot_start class="dropspot" href="javascript:TextPopup(this)" 
+												 id="a1" dataid="POPUP224038540" ?>Example<?rh-dropspot_end ?>.</p>
+                <?rh-droptext_start class="droptext" id="POPUP224038540" style="display: none;" ?>
+                <p class="Infinitive">Example</p>
+                <ol>
+                    <li class="p-Topic-Text-Numbered" value="1">
+                        <p class="Topic-Text-Numbered">In 
+			 the Select Rule Set dialog box, click <span class="SLXBold">New</span>, 
+			 and then click <span class="SLXBold">Add Rule</span>.</p>
+                    </li>
+                    <li class="p-Topic-Text-Numbered" value="2">
+                        <p class="Topic-Text-Numbered">Give 
+			 the rule a name, for example, AZLeads.</p>
+                    </li>
+                    <li class="p-Topic-Text-Numbered" value="3">
+                        <p class="Topic-Text-Numbered">Type 
+			 a condition in the <span class="SLXBold">If</span> box, for 
+			 example:<span class="SLXBold"><br />
+			CurrentEntity.Address.State = "AZ"</span></p>
+                    </li>
+                    <li class="p-Topic-Text-Numbered" value="4">
+                        <p class="Topic-Text-Numbered">In 
+			 the <span class="SLXBold">Then Actions</span> box, type an 
+			 action, for example:<span class="SLXBold"><br />
+			CurrentEntity.Owner = Teams.Southwest</span></p>
+                    </li>
+                    <li class="p-Topic-Text-Numbered" value="5">
+                        <p class="Topic-Text-Numbered">In 
+			 the <span class="SLXBold">Else Actions</span> box, type an 
+			 alternate action, for example:<span class="SLXBold"><br />
+			CurrentEntity.Owner = Teams.Global</span></p>
+                    </li>
+                </ol>
+                <p class="Topic-Text-Indent">An alternate action is not required.</p>
+                <p>&#160;</p>
+                <?rh-droptext_end ?>
+            </li>
+            <li class="p-Topic-Text-Numbered" value="4">
+                <p class="Topic-Text-Numbered">Click 
+	 <span class="SLXBold">OK</span> twice to exit the editor.</p>
+            </li>
+        </ol>
+        <p class="Infinitive">Related Topics</p>
+        <p class="Bullets"><a href="Working_with_Process_Orchestration.htm">Implementing 
+ Process Orchestration</a>
+        </p>
+        <p class="Bullets">&#160;</p>
+        <?rh-placeholder type="footer" ?>
+        <?rh-script_start ?>
+        <script type="text/javascript" language="JavaScript1.2">///*<![CDATA[*/
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP224038540');
+///*]]>*/</script>
+        <?rh-script_end ?>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

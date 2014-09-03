@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="10/11/11 lrw added related topic Comparing Nulls" MadCap:tocPath="Web Developer's Reference|Web Services" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About Sage Data (SData)</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body lang="EN-US" style="tab-interval: .5in;">
+        <h1><a name="kanchor16"></a>About Sage Data (<span class="SpellE"><a name="kanchor17"></a>SData</span>)</h1>
+        <p class="MsoNormal"><a name="kanchor18"></a>Sage Data (SData) provides a simple standard protocol 
+ for reading data from and writing data to business applications. <span class="PrimaryProductName">Saleslogix</span> desktop, server, and 
+ Web-based applications use it to communicate with each other, and also 
+ with third-party applications and the world wide web.</p>
+        <p class="subheading">Specifications</p>
+        <ul>
+            <li class="p-bullets" value="1">
+                <p class="bullets"><a href="http://sdata.sage.com">http://sdata.sage.com</a> 
+	 - Full documentation of the SData specification.</p>
+            </li>
+            <li class="p-bullets" value="2">
+                <p class="bullets"><a href="Saleslogix_Implementation_SData_1.0_Specification.htm"><span class="PrimaryProductName">Saleslogix</span> Implementation of Sage 
+	 Data (SData) 1.1</a> - Chart of the SData requirements implemented 
+	 by <span class="PrimaryProductName">Saleslogix</span>.</p>
+            </li>
+        </ul>
+        <p class="subheading">Overview</p>
+        <p>SData is based on the industry standard HTTP and other open standards 
+ such as XML and Atom.</p>
+        <p>To read information from a <span class="PrimaryProductName">Saleslogix</span> 
+ business application, a URL is used to make an HTTP GET request. The information 
+ is then returned as an Atom feed. The feed contains the information, or 
+ the data, as well as an XML description of the structure of the data. 
+ Encoding in XML permits it to be understood and used by other software, 
+ services on the web, or on your desktop.</p>
+        <p>If you type the URL into a web browser or an Atom Reader, then the request 
+ is sent for processing and the results are automatically returned and 
+ displayed.</p>
+        <p>If you are developing integrated <span class="PrimaryProductName">Saleslogix</span> 
+ applications, then <span class="SpellE">SData</span> can be implemented 
+ to initiate the requests automatically and to interpret the feed that 
+ is returned. The application that uses or interprets the returned data 
+ is said to consume the feed.</p>
+        <p>Using <span class="SpellE">SData</span>, in addition to reading information, 
+ you can also update, or even create new, information. <span class="SpellE">SData</span> 
+ supports CRUD operations - "CREATE", "READ", "UPDATE", 
+ "<span class="GramE">DELETE</span>" - although implemented as 
+ HTTP "POST", "GET", "PUT", "DELETE" 
+ methods. For example, new personnel records entered in an HR application 
+ can be created in a payroll application by sending HTTP POST requests. 
+ Similarly, changes to Sales Orders made in a CRM application could be 
+ updated in an order processing application by sending HTTP PUT requests. 
+ You can write code to consume the feed directly or you can use the <span class="SpellE">SData</span> Core Client Libraries. They are available 
+ with documentation and examples at <a href="http://github.com/SageSalesLogix/SDataCSharpClientLib">http://github.com/SageSalesLogix/SDataCSharpClientLib</a>.</p>
+        <p><span class="PrimaryProductName">Saleslogix</span> business 
+ applications provide <span class="SpellE">SData</span> feeds. Feeds are 
+ becoming known as 'Providers', making business information available to 
+ other applications. <span class="PrimaryProductName">Saleslogix</span> 
+ business applications also act as 'Consumers', taking the <span class="SpellE">SData</span> 
+ feeds produced by other applications (the providers) and using this information 
+ in new and innovative ways.</p>
+        <p>The information contained in <span class="SpellE">SData</span> feeds 
+ covers the full range of your business operations. For example Financial 
+ Accounting/ERP applications can provide feeds containing sales orders, 
+ customer details, or project details. Payroll and HR applications can 
+ provide feeds containing employee records, payroll details, and so on.</p>
+        <p>These feeds can be also be further refined; for example you can easily 
+ create a feed that shows only the sales orders for a single customer, 
+ along with information such as when the products on the sales order were 
+ sent. <span class="SpellE">SData</span> feeds can also be 'transformed', 
+ mapping them into other Industry standard XML formats, or for third-party 
+ custom systems.</p>
+        <p class="infinitive">Related Topics</p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">"Deploying 
+ the <span class="SpellE">SData</span> Portal" in the Application Architect online Help</MadCap:conditionalText>
+        </p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">"Generating 
+ <span class="SpellE">SData</span> Feeds for an Entity" in the Application Architect online Help</MadCap:conditionalText>
+        </p>
+        <p><a href="../Examples/Consuming_SData_through_the_Web_Client.htm">Consuming 
+ SData through the Web Client</a>
+        </p>
+        <p><a href="../Examples/Formatting_SData_Property_Values.htm">Formatting 
+ SData Property Values Based on Current Culture</a>
+        </p>
+        <p><a href="Saleslogix_Implementation_SData_1.0_Specification.htm"><span class="PrimaryProductName">Saleslogix</span> Implementation of Sage 
+ Data (SData) 1.1</a>
+        </p>
+        <p><a href="../Supported_Functions/SData_-_Supported_Functions.htm">SData 
+ - Supported Functions</a>
+        </p>
+        <p><a href="../Supported_Functions/Comparing_Nulls_in_SData_Queries.htm">Comparing 
+ Nulls in SData Queries</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

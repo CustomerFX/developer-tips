@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="081409 lrw new." MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Pre-Conditions in Process Orchestration</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor86"></a>Pre-Conditions 
+ in Process Orchestration</h1>
+        <p>The database eventing mechanism notifies the Process Orchestration engine 
+ that an entity instance has been changed, inserted, or deleted. After 
+ that, the process can run right away or evaluate conditions on the entity 
+ instance to determine if the process should run. For example, database 
+ eventing could fire when the Division property of an Account changes, 
+ and then the Process Host engine would start the process only if Account.State 
+ equals 'AZ' .</p>
+        <p>Pre-condition expressions are evaluated by the <span class="PrimaryProductName">Saleslogix</span> 
+ Expression Language evaluator. Refer to the Application Architect help 
+ topic  <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Expression 
+ Language Features</MadCap:conditionalText> for more information. String values must be in quotes, 
+ and if there are multiple conditions, each must be enclosed with parenthesis. 
+ Some examples of conditions are:</p>
+        <p>&#160;</p>
+        <p class="code-snippet">condition = " Division='HQ'"</p>
+        <p class="code-snippet">condition = "(Closed = true) and (SalesPotential 
+ &gt; 1000000)"</p>
+        <p class="code-snippet">condition = "Employees=45"</p>
+        <p class="code-snippet">condition = ""</p>
+        <p>To enter a pre-condition in the processStart.xml file, just add it to 
+ the end of the entity type node. &#160;In the following example, when 
+ an Account's Division property value has changed, the Division property 
+ will be checked to verify the value is equal to 'HQ' before starting the 
+ process:</p>
+        <p>&#160;</p>
+        <p class="code-snippet">&#160;</p>
+        <p class="code-snippet">&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+        <p class="code-snippet">&lt;processStartConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"</p>
+        <p class="code-snippet">&#160;&#160;&#160;&#160;&lt;event name="PropertyChanged"&gt;</p>
+        <p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;entityType 
+ id="63b61866-48ec-422b-b2bb-09a199b26cd8" name="Sage.Entity.Interfaces.IAccount, 
+ Sage.Entity.Interfaces" memberFilter="Division" condition="Division='HQ'"&gt;</p>
+        <p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;runProcess 
+ name="DivisionSendMail" /&gt;</p>
+        <p class="code-snippet">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/entityType&gt;</p>
+        <p class="code-snippet">&#160;&#160;&#160;&#160;&lt;/event&gt;</p>
+        <p class="code-snippet">&lt;/processStartConfiguration&gt;</p>
+        <p class="code-snippet">&#160;</p>
+        <p class="Infinitive" style="margin-top: 0.0pt;margin-bottom: 0;">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="9/29/08 chgs for localization;101708 localization" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|CAB Objects" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>ObjectBuilder</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor6"></a>ObjectBuilder</h1>
+        <p>The ObjectBuilder CAB provides a central framework for the creation, 
+ initialization, and management of objects in the <span class="PrimaryProductName">Saleslogix</span> 
+ application architecture. ObjectBuilder is made up of the following parts:</p>
+        <ul>
+            <li value="1"><span style="font-weight: bold;">Locator</span> 
+	 - The central repository for all objects that pass through ObjectBuilder. 
+	 The locator is used to find objects (such as services).</li>
+            <li value="2"><span style="font-weight: bold;">Lifetime 
+	 Container</span> – Ensures that an object remains alive for the appropriate 
+	 lifecycle required by the application.</li>
+            <li value="3"><span style="font-weight: bold;">Builder 
+	 Strategies</span> – A configurable set of IBuilderStrategy 
+	 instances through which each object is passed, allowing particular 
+	 objects to be constructed or initialized in a specific way.</li>
+            <li value="4"><span style="font-weight: bold;">Dependency 
+	 Injection Attributes</span> – Define how an object will be constructed 
+	 and/or initialized.</li>
+        </ul>
+        <p class="Bullets">Rarely will you interact directly with ObjectBuilder, 
+ since most of its functionality is wrapped by the CAB WorkItem; however, 
+ there may be times when you need more explicit control over how an object 
+ is built. &#160;A few examples follow:</p>
+        <p class="Bullets">&#160;</p>
+        <p class="Infinitive">Executing Code during Build-Up</p>
+        <p>public class MyObject</p>
+        <p>{</p>
+        <p>&#160;&#160;&#160;&#160;[Microsoft.Practices.ObjectBuilder.InjectionMethod]</p>
+        <p>&#160;&#160;&#160;&#160;public void InitializeMyObject()</p>
+        <p>&#160;&#160;&#160;&#160;{</p>
+        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//Do 
+ something within my object during build up</p>
+        <p>&#160;&#160;&#160;&#160;}</p>
+        <p>}</p>
+        <p>&#160;</p>
+        <p class="Infinitive">Controlling Which Constructor is used by ObjectBuilder</p>
+        <p class="Bullets">public class MyObject</p>
+        <p class="Bullets">{</p>
+        <p>&#160;&#160;&#160;&#160;/// &lt;summary&gt;</p>
+        <p>&#160;&#160;&#160;&#160;/// This constructor is used 
+ when constructed through ObjectBuilder</p>
+        <p>&#160;&#160;&#160;&#160;/// &lt;/summary&gt;</p>
+        <p>&#160;&#160;&#160;&#160;[Microsoft.Practices.ObjectBuilder.InjectionConstructor]</p>
+        <p>&#160;&#160;&#160;&#160;public MyObject()</p>
+        <p>&#160;&#160;&#160;&#160;{</p>
+        <p> <![CDATA[ ]]></p>
+        <p>&#160;&#160;&#160;&#160;}</p>
+        <p>&#160;&#160;&#160;&#160;/// &lt;summary&gt;</p>
+        <p>&#160;&#160;&#160;&#160;/// This constructor is used 
+ when it is explicitly called in code</p>
+        <p>&#160;&#160;&#160;&#160;/// &lt;/summary&gt;</p>
+        <p>&#160;&#160;&#160;&#160;/// &lt;param name="someParameter"&gt;&lt;/param&gt;</p>
+        <p>&#160;&#160;&#160;&#160;public MyObject(string someParameter)</p>
+        <p>&#160;&#160;&#160;&#160;{</p>
+        <p>&#160;&#160;&#160;&#160;}</p>
+        <p>}</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="margin-top: 0.0;margin-bottom: 0.0;">If you add an 
+		 InjectionConstructor attribute to one of your classes, it is used 
+		 only if your class is instantiated through one of the managed 
+		 collections for a WorkItem (such as Items or Services). See the 
+		 <a href="WorkItems.htm">WorkItems</a> topic for more information. 
+		 Do not use constructor injection on anything inherited from Control 
+		 in the Web (such as ASP.NET Smart Parts). Smart Parts are created 
+		 with their default constructor, then passed into the WorkItem 
+		 that contains them via the Items.Add() method.</p>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

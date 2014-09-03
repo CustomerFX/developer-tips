@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="10/9/12 lrw new" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Adding a Custom Entity to a Merge Business Rule</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor42"></a>Adding 
+ a Custom Entity to a Merge Business Rule</h1>
+        <p>The merge functionality in the <span class="PrimarySLXWebClient">Saleslogix Web Client</span> 
+ is handled by calling merge business rules. These business rules use post 
+ execute steps to move child records from the source parent to the target 
+ parent after the merge. You can add a custom child entity to the merge 
+ process by adding a post execute step to update its parent entity.</p>
+        <p class="Infinitive">To add</p>
+        <ol>
+            <li value="1">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Open 
+	 the merge business rule for the parent entity</MadCap:conditionalText>. For example, expand 
+	 Entity Model &gt; Packages &gt; SalesLogix Application Entities &gt; 
+	 Account &gt; Rules &gt; Business Rule Methods and double-click MergeAccount.
+<br /><MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">See the Application Architect online help topic "Actions, Events, and Business Rules". </MadCap:conditionalText><![CDATA[           ]]></li>
+            <li value="2">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Add 
+	 a post execute step</MadCap:conditionalText>. For example, choose a step type of C# Code 
+	 Snippet and a step name of AccountDiscounts
+            </li>
+            <li value="3">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Edit 
+	 the code snippet and add the merge code.</MadCap:conditionalText>
+                <br />
+                <br />	The following code examples are based on a table and entity named ACCOUNTDISCOUNT 
+	 and a relationship from the Account entity to the DISCOUNT entity 
+	 named AccountDiscounts.
+        
+        <ul><li value="1">Code 
+	 using entity factory: This is the preferred method for the merge since 
+	 it uses the entity model to make the changes and allows any additional 
+	 validation or changes to the data in the record.
+           
+        
+        <p class="code-snippet" style="margin-left: 64px;">//------------------Start 
+ Entity Factory------------------------</p><p class="code-snippet" style="margin-left: 64px;">//Get an object for 
+ the account merging from</p><p class="code-snippet" style="margin-left: 64px;">IAccount oldAccount 
+ = Sage.Platform.EntityFactory.GetById&lt;IAccount&gt;(mergeProvider.Source.EntityId.ToString());</p><p class="code-snippet" style="margin-left: 64px;">//For each child object 
+ of the relationship from old account do the following</p><p class="code-snippet" style="margin-left: 64px;">foreach(IAccountDiscount 
+ a2 in oldAccount.AccountDiscounts)</p><p class="code-snippet" style="margin-left: 64px;">{</p><p class="code-snippet" style="margin-left: 64px;">//Set the relationship 
+ to the new account</p><p class="code-snippet" style="margin-left: 64px;">a2.Account=account;</p><p class="code-snippet" style="margin-left: 64px;">//save the change</p><p class="code-snippet" style="margin-left: 64px;">a2.Save();</p><p class="code-snippet" style="margin-left: 64px;">//------------------End 
+ Entity Factory--------------------------<br /><br />&#160;</p></li><li value="2">Code 
+	 using HQL: This method uses NHibernate but still gets the power of 
+	 a SQL statement.
+          
+       
+        <p class="code-snippet" style="margin-left: 64px;">//------------------------Start 
+ HQL---------------------------</p><p class="code-snippet" style="margin-left: 64px;">//Get a session scope 
+ wrapper and use it for the following</p><p class="code-snippet" style="margin-left: 64px;">using (ISession session 
+ = new Sage.Platform.Orm.SessionScopeWrapper())</p><p class="code-snippet" style="margin-left: 64px;">{</p><p class="code-snippet" style="margin-left: 64px;">//create a query object 
+ and set up the SQL and Ids</p><p class="code-snippet" style="margin-left: 64px;">IQuery query = session.CreateQuery("UPDATE 
+ AccountDiscounts set AccountId='"+mergeProvider.Target.EntityId.ToString()+"' 
+ WHERE AccountId='"+mergeProvider.Source.EntityId.ToString()+"'");</p><p class="code-snippet" style="margin-left: 64px;">//Execute the query 
+ as an update</p><p class="code-snippet" style="margin-left: 64px;">query.ExecuteUpdate();</p><p class="code-snippet" style="margin-left: 64px;">}</p><p class="code-snippet" style="margin-left: 64px;">//--------------------End 
+ HQL---------------------------</p><p class="code-snippet" style="margin-left: 64px;">&#160;</p></li><li class="p-Topic-Text-Bulleted-2" value="3"><p class="Topic-Text-Bulleted-2">Code 
+	 using OLEDB: Using OLEDB is not recommended since it will bypass business 
+	 rules and directly access the database. &#160;It is included for those 
+	 cases when such a bypass of business rules is necessary or desired.</p></li></ul><p class="code-snippet">&#160;</p><p class="code-snippet" style="margin-left: 64px;">//--------------------------Start 
+ OLEDB--------------------------</p><p class="code-snippet" style="margin-left: 64px;">//get an object for 
+ the dataservice</p><p class="code-snippet" style="margin-left: 64px;">Sage.Platform.Data.IDataService 
+ datasvc = Sage.Platform.Application.ApplicationContext.Current.Services.Get&lt;Sage.Platform.Data.IDataService&gt;();</p><p class="code-snippet" style="margin-left: 64px;">//Use the connection 
+ from the dataservice for the commands</p><p class="code-snippet" style="margin-left: 64px;">using(System.Data.OleDb.OleDbConnection 
+ conn = new System.Data.OleDb.OleDbConnection(datasvc.GetConnectionString()))</p><p class="code-snippet" style="margin-left: 64px;">{</p><p class="code-snippet" style="margin-left: 64px;">//Open the connection</p><p class="code-snippet" style="margin-left: 64px;">conn.Open();</p><p class="code-snippet" style="margin-left: 64px;">//Create the command 
+ with the SQL and Ids in it</p><p class="code-snippet" style="margin-left: 64px;">System.Data.OleDb.OleDbCommand 
+ cmd = new System.Data.OleDb.OleDbCommand("update sysdba.AccountDiscount 
+ set AccountID = '"+mergeProvider.Target.EntityId.ToString()+"' 
+ where accountid='"+mergeProvider.Source.EntityId.ToString()+"'",conn);</p><p class="code-snippet" style="margin-left: 64px;">//Execute the command</p><p class="code-snippet" style="margin-left: 64px;">cmd.ExecuteNonQuery();</p><p class="code-snippet" style="margin-left: 64px;">}</p><p class="code-snippet" style="margin-left: 64px;">//-------------------------End 
+ OLEDB----------------------------</p></li>
+            <li value="4">In 
+	 the using area of the code, type the appropriate using statements:
+            </li>
+            <ul>
+                <li value="1"> EntityFactory
+            
+                 <p class="code-snippet" style="margin-left: 64px;">using Sage.SalesLogix.Services.Potential 
+ Match;</p></li>
+                <li value="2">HQL
+                    
+                <p class="code-snippet" style="margin-left: 64px;">using Sage.SalesLogix.Services.Potential 
+ Match;</p><p class="code-snippet" style="margin-left: 64px;">using NHibernate;</p><p class="code-snippet" style="margin-left: 64px;">using NHibernate.Criterion;</p></li>
+                <li value="3">OLEDB
+                    
+                <p class="code-snippet" style="margin-left: 64px;">using Sage.SalesLogix.Services.Potential 
+ Match;</p></li>
+            </ul>
+            <li value="5">Add 
+	 an assembly reference for the Sage.SalesLogix.Services.Potential Match.dll 
+	 by doing the following:
+           <ol><li value="1">View 
+	 the <span class="SLXBold">Properties</span> window and click the ellipsis 
+	 in <span class="SLXBold">AssemblyReferences</span>.
+					</li><li value="2">In 
+	 the AssemblyReference Collection Editor, click <span class="SLXBold">Add</span>.</li><li value="3">In 
+	 the AssemblyReference property, <span class="SLXBold">AssemblyName</span>, 
+	 type <span class="SLXBold">Sage.SalesLogix.Services.PotentialMatch.dll</span>.</li><li value="4">In 
+	 <span class="SLXBold">HintPath</span> enter the path and filename 
+	 for the assembly. For example, C:\Program Files(x86)\SalesLogix\Sage.SalesLogix.Services.PotentialMatch.dll.</li><li value="5">Click 
+	 <span class="SLXBold">OK</span>.</li></ol></li>
+            <li value="6">Click 
+	 <span class="SLXBold">Save All</span>.</li>
+            <li value="7">
+                <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">Build and deploy. See the Application Architect online help topics "Building the Web Platform" and "Deploying the Saleslogix Web Client Portal"</MadCap:conditionalText>.</li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="9/21/12 lrw new;102312 lrw added filters to list" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" /><title>Enabling automatic project reload</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor55"></a>Enabling 
+ automatic project reload</h1>
+        <p>Portals get the following information directly from the Application 
+ Architect project model, not from files in the deployed web site:</p>
+        <ul>
+            <li value="1">Form metadata used by the 
+	 Web Client Form Designer
+            </li>
+            <li value="2">Mashup metadata
+            </li>
+            <li value="3">Filter metadata
+            </li>
+        </ul>
+        <p>A portal can be set up to automatically reload the project if it is 
+ changed, for example in Application Architect. Automatic project reload 
+ is enabled by default for the SLXClient portal.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p>For VFS-based projects, th e<span class="PrimaryProductName">Saleslogix</span> Messaging Service 
+		 must be running for notification of project changes to be received.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Infinitive">To enable automatic project reload for a portal</p>
+        <ol>
+            <li value="1">In 
+	 the Application Architect, <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">open 
+	 the portal</MadCap:conditionalText>. <MadCap:conditionalText MadCap:conditions="Links.NoLink_Text">See "Opening the Portal Editor" in the Application Architect online Help
+. </MadCap:conditionalText><![CDATA[           ]]></li>
+            <li value="2">Click 
+	 the <span class="SLXBold">Modules</span> tab, and select Sage.SalesLogix.Web.ProjectsModule.
+            </li>
+            <li value="3">Click 
+	 the <span class="SLXBold">Configure</span> button, set <span class="SLXBold"><a name="kanchor56"></a>EnableAutoReload</span>=True, 
+	 and click <span class="SLXBold">OK</span>.
+            </li>
+            <li value="4">Deploy 
+	 the portal.
+            </li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

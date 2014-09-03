@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="08/17/12 lrw new" MadCap:tocPath="Web Developer's Reference|Web Services" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About Job Server</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body lang="EN-US" style="tab-interval: .5in;">
+        <h1><a name="kanchor19"></a>About the Job Server</h1>
+        <p class="subheading">SUMMARY</p>
+        <p>The Job Server enables you to schedule single and recurring tasks for 
+ immediate or delayed execution, either manually or dynamically at run 
+ time. It executes tasks out of process, freeing up worker threads and 
+ memory for client sessions. Good candidates for this are long running 
+ tasks and resource intensive tasks.</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets">Long running tasks – Offload 
+	 long running tasks to the Job Server so they run asynchronously. When 
+	 user sessions do not have to wait for long running processes to complete, 
+	 you will see fewer request time outs.</p>
+            </li>
+            <li class="p-Bullets" value="2">
+                <p class="Bullets">Intensive tasks - Eliminate 
+	 competition for computing resources by off-loading processing/memory 
+	 intensive tasks to the Job Server. The Job Server uses a different 
+	 application pool (and thus separate memory and worker threads) than 
+	 the Web Host. It can even be located on a separate server.</p>
+            </li>
+        </ul>
+        <p>The Job Server is a shared service that can be consumed by any <span class="PrimaryProductName">Saleslogix</span> adaptive client, including 
+ Web, Windows, and Mobile.</p>
+        <p class="subheading">FRAMEWORK</p>
+        <p>You create a job using the .NET language and make use of the standard 
+ <span class="PrimaryProductName">Saleslogix</span> ORM framework 
+ and services that are available when creating various Web Client customizations. 
+ Write user interfaces for or interact directly with the Job Server and 
+ its related components through SData service endpoints or WCF endpoints.</p>
+        <p>The core component that handles the scheduling and thread pool management 
+ is the open source Quartz.NET library, a port of the Quartz Java project 
+ which has been actively developed for over 7 years.</p>
+        <p class="subheading">Record access security</p>
+        <p>You can code a job to use the security credentials of the system administrator 
+ or of a user specified at run time. Night batch jobs such as UpdateRemainingDays 
+ (of Contract) are commonly run with system administrator credentials. 
+ Tasks initiated by end-users such as UpdateEntityJob and DeleteEntityJob 
+ typically run using the credentials of the initiating user.</p>
+        <p class="subheading">Install Location</p>
+        <p>The SData portal and the "Job Server" service may reside on 
+ separate machines. The "Job Server" service is commonly installed 
+ on the <span class="PrimaryProductName">Saleslogix</span> application 
+ server where the “<span class="PrimaryProductName">Saleslogix</span> 
+ Server” service is installed.</p>
+        <p class="subheading">Additional Documentation</p>
+        <p>See <span style="font-style: italic;">An Introduction to Job Server 
+ in <span class="PrimaryProductName">Saleslogix</span></span> 
+ for technical details including endpoints, extended explanations, and 
+ usage examples.</p>
+        <p class="RelatedTopics">Related Topics</p>
+        <p><a href="portalexplorer.chm::/Configuring_and_Deploying_Portals/Deployment/Portals/Deploying_the_Job_Service_Portal.htm">Deploying 
+ the <span class="PrimaryPortalJobService">Saleslogix Job Service portal</span></a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

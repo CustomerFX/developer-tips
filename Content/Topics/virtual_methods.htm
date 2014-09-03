@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="051911 added related topic" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Virtual Methods</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor60"></a>Inserting Custom Logic into Events</h1>
+        <p>The <span class="PrimaryProductName">Saleslogix</span> API 
+ has base classes from which you can derive additional classes. The inheritance 
+ chain from the base class, SmartPart, begins as follows:</p>
+        <p class="code-snippet" style="margin-left: 64px;">Sage.Platform.WebPortal.SmartParts.SmartPart</p>
+        <p class="code-snippet" style="margin-left: 64px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sage.Platform.WebPortal.SmartParts.EntityBoundSmartPart</p>
+        <p class="code-snippet" style="margin-left: 64px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sage.Platform.WebPortal.SmartParts.EntityBoundSmartPartInfoProvider</p>
+        <p class="code-snippet" style="margin-left: 64px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sage.Platform.WebPortal.SmartParts.SmartPartInfoProvider</p>
+        <p style="margin-left: 0px;">Refer to the <span class="PrimaryProductName">Saleslogix</span> 
+ API &#160;and review the SmartPart 
+ and EntityBoundSmartPart classes. &#160;They introduce methods associated 
+ with events such as OnMyDialogOpening and GetSmartPartInfo that you may 
+ want to override to insert your own logic. During your review of the API, keep in mind that methods beginning with "On" 
+ fire events of the same name minus the prefix. For example, OnRegisterClientScripts 
+ fires the RegisterClientScripts event.</p>
+        <p class="Tip-Note-Text">As an alternative to overriding a method that 
+ has an associated event, you could attach an event handler to the event 
+ and perform the logic there. Make sure to wire the event handlers up before 
+ they fire. Note: WireEventHandlers is intended to be used to wire event 
+ handlers for events fired by controls in this form, not those for events 
+ thrown by the form itself. Thus, WireEventHandlers fires after RegisterClientScript.</p>
+        <p class="RelatedTopics">Related Topics</p>
+        <p><a href="../Saleslogix_Event_Handling_in_the_Page_Life_Cycle.htm"><span class="PrimaryProductName">Saleslogix</span> Event Handling in the 
+ Page Life Cycle</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="043012 new" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="copyright" content="" /><title>Hosting Custom Controls in Quick Form Designer</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor83"></a>Hosting 
+ Custom Controls in the Quick Form Designer</h1>
+        <p>If you create a custom control for use in Application Architect Quick 
+ Forms, you can add the control to the appropriate Quick Form and toolbar 
+ insert menus by decorating the control class with the ControlDesignerSupportAttribute. 
+ For example:</p>
+        <p class="code-snippet">&#160;</p>
+        <p class="code-snippet">[ControlDesignerSupportAttribute(ControlCategories.ControlCategoriesEditors, 
+ ControlKind.TextEdit)</p>
+        <p class="code-snippet">public class QFTextBox : QuickFormsControlBase, 
+ ITextBoxControl, IComponentInitializer, ISummaryRenderingControl, IRequireValue</p>
+        <p class="subheading">Constructors</p>
+        <p class="Topic-Text-Numbered">There are four constructors available for 
+ the attribute:</p>
+        <p class="Topic-Text-Numbered">&#160;</p>
+        <p class="code-snippet">public ControlDesignerSupportAttribute();</p>
+        <p class="code-snippet">public ControlDesignerSupportAttribute(string category);</p>
+        <p class="code-snippet">public ControlDesignerSupportAttribute(string category, 
+ ControlKind kind);</p>
+        <p class="code-snippet">public ControlDesignerSupportAttribute(string category, 
+ ControlKind kind, bool targetsQuickForms, bool targetsToolbars);</p>
+        <p class="subheading">Properties</p>
+        <p class="Topic-Text-Numbered" style="margin-right: 76px;">Six properties 
+ are exposed:</p>
+        <p class="Topic-Text-Numbered">&#160;</p>
+        <table style="vertical-align: top;margin-left: 0;margin-right: auto;width: 88.378%;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" cellspacing="0" class="TableStyle-TableStyle">
+            <col style="width: 37.871%;" class="Column-Column1" />
+            <col style="width: 62.129%;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Property</th>
+                    <th class="HeadD-Column1-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 37.871%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">string Category { get; 
+		 set; }</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 62.129%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">Specifies the submenu the control belongs to. 
+		 For example, the Radio Group control displays on the Buttons submenu 
+		 because its category is set to ControlCategoryButtons.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 37.871%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">string DisplayName { 
+		 get; }</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 62.129%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 37.871%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">ControlKind Kind { get; 
+		 set; }</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 62.129%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">The ControlKind enum is used for a level of 
+		 categorization of the controls. Valid values are ControlKind.Button, 
+		 ControlKind.Grid, ControlKind.Lookup, ControlKind.TextEdit, ControlKind.Navigator, 
+		 ControlKind.Container, and ControlKind.TabControl. </p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 37.871%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">bool TargetsQuickForms 
+		 { get; set; }</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 62.129%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">True if the control can be inserted on a quick 
+		 form. Default is True.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 37.871%;padding-right: 10px;padding-left: 10px;" class="BodyE-Column1-Body1">
+                        <p class="Table">bool TargetsToolbars 
+		 { get; set; }</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 62.129%;padding-right: 10px;padding-left: 10px;" class="BodyD-Column1-Body1">
+                        <p class="Table">True if the control can be inserted on the toolbar 
+		 of the quick form. Default is False.</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" class="Body-Body1">
+                    <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 37.871%;padding-right: 10px;padding-left: 10px;" class="BodyB-Column1-Body1">
+                        <p class="Table">bool VisibleControl 
+		 { get; set; }</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;width: 62.129%;padding-right: 10px;padding-left: 10px;" class="BodyA-Column1-Body1">
+                        <p class="Table">False if the control belongs in to the Non-Visual 
+		 Controls pane, for example, a data source control; otherwise, 
+		 True. Default is True.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="subheading">Control Categorization</p>
+        <p class="Topic-Text-Numbered">Set the Category property to one of the 
+ following pre-set values to place the control in an existing submenu, 
+ or create a new submenu with a custom string.</p>
+        <ul>
+            <li class="p-Bullets" value="1">
+                <p class="Bullets">ControlCategories.ControlCategoriesContainers</p>
+            </li>
+            <li class="p-Bullets" value="2">
+                <p class="Bullets">ControlCategories.ControlCategoriesDataSource</p>
+            </li>
+            <li class="p-Bullets" value="3">
+                <p class="Bullets">ControlCategories.ControlCategoriesEditors</p>
+            </li>
+            <li class="p-Bullets" value="4">
+                <p class="Bullets">ControlCategories.ControlCategoriesMisc</p>
+            </li>
+            <li class="p-Bullets" value="5">
+                <p class="Bullets">ControlCategories.ControlCategoriesSelectControls</p>
+            </li>
+            <li class="p-Bullets" value="6">
+                <p class="Bullets">ControlCategories.ControlCategoryAdvanced</p>
+            </li>
+            <li class="p-Bullets" value="7">
+                <p class="Bullets">ControlCategories.ControlCategoryButtons</p>
+            </li>
+            <li class="p-Bullets" value="8">
+                <p class="Bullets">ControlCategories.ControlCategoryGrids</p>
+            </li>
+        </ul>
+        <p class="subheading">Menu Positioning</p>
+        <p class="Topic-Text-Numbered">By default, control visibility is enabled 
+ for the Quick Form Designer and disabled for the toolbar. Use the Boolean 
+ properties, TargetsQuickforms and TargetsToolbars, to change visibility 
+ on the menus. You can provide the values or use named parameters in the 
+ call. For examples:</p>
+        <p class="Topic-Text-Numbered">&#160;</p>
+        <p class="code-snippet">// turns off quickform access and turns on toolbar 
+ access for Group Navigator control</p>
+        <p class="code-snippet">[ControlDesignerSupportAttribute(ControlCategories.ControlCategoryButtons, 
+ ControlKind.Navigator, false,true)]</p>
+        <p class="code-snippet">public class QFSLXGroupNavigator : QuickFormsControlBase, 
+ IGroupNavigatorControl</p>
+        <p class="Topic-Text-Numbered">&#160;</p>
+        <p class="code-snippet">// turns on toolbar access and quickform access 
+ is default for Button control</p>
+        <p class="code-snippet">[ControlDesignerSupportAttribute(ControlCategories.ControlCategoryButtons, 
+ ControlKind.Button, TargetToolbars = true)]</p>
+        <p class="code-snippet">public class QFButton : QuickFormsControlBase, 
+ IButtonControl, ISummaryRenderingControl</p>
+        <p class="subheading">Non-visual controls</p>
+        <p class="Topic-Text-Numbered">To define a control as non-visual (hosted 
+ in the Non-Visual Controls pane), set the VisibleControl property to false. 
+ For example:</p>
+        <p class="code-snippet">&#160;</p>
+        <p class="code-snippet">[ControlDesignerSupportAttribute(ControlCategories.ControlCategoriesDataSource, 
+ VisibleControl=false)]</p>
+        <p class="code-snippet">public class QFDataSource : QFDataSourceBase, IQFDataSource, 
+ ISummaryRenderingControl</p>
+        <p class="RelatedTopics">Related Topics</p>
+        <p class="Topic-Text-Numbered"><a href="Creating_Custom_Controls_for_Quick_Forms.htm">Creating 
+ custom controls for quick forms</a>
+        </p>
+        <p class="Infinitive" style="margin-top: 0.0pt;margin-bottom: 0;">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

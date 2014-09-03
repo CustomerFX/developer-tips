@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Web Developer's Reference|How to..." MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" xmlns="" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <meta name="template" content="SalesLogixFooterHelpLink.htt" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="" />
+        <meta name="topic-comment" content="080509 lrw new. 092309 lrw fixed file name and path for sage-common.js 101709 updated with info on if you must edit the merged scripts. 071812 lrw removed list of merged, hid dead Tell me more link.081512 lrw corrected file name" />
+        <meta name="generator" content="Adobe RoboHelp 10" /><title>Improving Performance of Custom JavaScript</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Improving Performance of Custom JavaScript</h1>
+        <p>The Saleslogix common 
+ scripts are <span class="MCPopup" xmlns=""><a href="javascript:void(0);" MadCap:src="../Pop-up_topics/Minify_Definition.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">minified</a></span> and merged during the build process 
+ into Sage-common.js (or sage-common-debug.js) in order to reduce the number 
+ of http requests to the server.</p>
+        <p>You can add your custom JavaScripts to this project to realize the same 
+ benefit. </p>
+        <p MadCap:targetName="1p">Add to the project only scripts that you would normally reference 
+	 in the master pages. If you are using dynamic script addition through 
+	 ScriptManager, do not include the script in the minify and consolidate 
+	 process.</p>
+        <p MadCap:targetName="1p3" xmlns="http://www.w3.org/1999/xhtml">During the build process, the jsb project file is used to generate sage-common.js 
+ and its debug version, sage-common-debug.js.</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">Saleslogix recommends 
+ that if you must change the Saleslogix 
+ script files that are merged, do not edit the Saleslogix 
+ files, but instead, override in your custom script. </p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%" xmlns="http://www.w3.org/1999/xhtml">
+            <col style="width: 5%;" />
+            <col style="width: 95%;" />
+            <tr>
+                <td style="width: 5%; vertical-align: TOP; padding-left: 6px; padding-top: 6px;      padding-right: 6px; padding-bottom: 6px;">
+                    <p style="text-align: center;                  margin-bottom: 0;">
+                        <img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 95%; vertical-align: TOP; padding-left: 6px;      padding-top: 6px; padding-right: 6px; padding-bottom: 6px;">
+                    <p class="Tip-Note-Text">Sage-common.js and sage-common-debug.js 
+		 are generated files. They contain anything that is in the files 
+		 listed in SageSalesLogixCommon.jsb. &#160;Jsb files are project 
+		 files created by JSBuilder which is a free utility from Google.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Infinitive" MadCap:targetName="1p2">To add</p>
+        <ol MadCap:targetName="1ol">
+            <li value="1">Add 
+		 your script to SageSalesLogixCommon.jsb in the model by doing 
+		 one of the following:
+        
+        <ul><li value="1">Edit 
+		 the XML file in Application Architect. <a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="a-d">How?<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a> <ol MadCap:targetName="a-d" xmlns="http://www.w3.org/1999/xhtml" style="display: none;"><li value="1">Open 
+				 the Portal Explorer and expand the node for the portal.
+                    </li><li value="2">Double-click 
+				 SageSalesLogixCommon.jsb in the SupportFiles/jscript folder.
+                    </li><li value="3">Add 
+				 a &lt;file&gt; and &lt;include&gt; nodes for the script 
+				 you want to add.
+                    </li><li value="4">Save 
+				 and close the file.
+                    </li></ol></li><li value="2">If 
+		 the project is a local project workspace, you have the option 
+		 to use the JS Builder utility. <a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="bull">Tell 
+		 me more...<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" xmlns="" /></a> <ul MadCap:targetName="bull" xmlns="http://www.w3.org/1999/xhtml" style="display: none;"><li value="1">The JS Builder 
+				 utility is available for download at http://code.google.com/p/js-builder/.
+                    </li><li class="p-Bullets" value="2"><p class="Bullets">SageSalesLogixCommon.jsb 
+				 is located in the project workspace folder at Model\Portal\SlxClient\SupportFiles\jscript.</p></li></ul></li></ul></li>
+            <li value="2">Build 
+		 and deploy the portal.
+           
+       
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="98%" xmlns="http://www.w3.org/1999/xhtml"><col style="width: 7.75%;" /><col style="width: 92.25%;" /><tr><td style="width: 7.75%; vertical-align: TOP; padding-left: 6px;       padding-top: 6px; padding-right: 6px; padding-bottom: 6px;"><p style="text-align: center; margin-bottom: 0;"><img src="../Graphics/note.gif" alt="" style="border: none;" width="24" height="24" border="0" /></p></td><td style="width: 92.25%; vertical-align: TOP; padding-left: 6px;       padding-top: 6px; padding-right: 6px; padding-bottom: 6px;"><p>If 
+			 you choose to edit the file in the deployed website files 
+			 instead of in the project workspace model, remember to copy 
+			 the altered file back into the model or it will be overwritten 
+			 in subsequent portal deployments.</p><p class="bullets">&#160;</p></td></tr></table></li>
+        </ol>
+        <p class="Infinitive" xmlns="http://www.w3.org/1999/xhtml">Related Topics</p>
+        <p class="Topic-Text-Numbered" xmlns="http://www.w3.org/1999/xhtml"><a href="Registering_scripts_dynamically.htm">Registering 
+ scripts dynamically</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>
